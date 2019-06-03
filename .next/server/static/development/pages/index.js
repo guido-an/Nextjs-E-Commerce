@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -172,32 +172,32 @@ var Header = function Header(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/Guido/Desktop/final-project/components/Layout.js";
 
 
 
 
 var Layout = function Layout(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), props.children, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: this
   }));
@@ -1575,25 +1575,24 @@ var Index = function Index(props) {
       },
       __self: this
     }, vendor.description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      as: "".concat(vendor.shop_url),
-      href: "/shop/?id=".concat(vendor.id),
+      href: "/shop/?vendor_id=".concat(vendor.vendor_id),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 17
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
       className: "jsx-3116291883",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 18
       },
       __self: this
     }, "Vendor page")));
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "3116291883",
     __self: this
-  }, "img.jsx-3116291883{padding-top:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJnQixBQUlRLGlCQUFDIiwiZmlsZSI6Ii9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgdmVuZG9ycyBmcm9tIFwiLi4vdmVuZG9ycy5qc29uXCI7XG5pbXBvcnQgZmV0Y2ggZnJvbSBcImlzb21vcnBoaWMtdW5mZXRjaFwiO1xuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xuaW1wb3J0IExheW91dCBmcm9tIFwiLi4vY29tcG9uZW50cy9MYXlvdXRcIjtcblxuY29uc3QgSW5kZXggPSBwcm9wcyA9PiAoXG4gIDxMYXlvdXQ+XG4gICAgey8qIHNob3cgYWxsIHZlbmRvcnMgaW5mb3JtYXRpb24gKi99XG4gICAge3ZlbmRvcnMuZGF0YS5tYXAodmVuZG9yID0+IHtcbiAgICAgIHJldHVybiAoXG4gICAgICAgIDxkaXYga2V5PXt2ZW5kb3IuaWR9PlxuICAgICAgICAgIDxpbWcgc3JjPXt2ZW5kb3IubG9nb30gd2lkdGg9XCIxNTBweFwiIC8+XG4gICAgICAgICAgPGgxPnt2ZW5kb3IubmFtZX08L2gxPlxuICAgICAgICAgIDxwPnt2ZW5kb3IuZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgIHsvKiBsaW5rIHRvIHJlbGF0aXZlIHNob3AgcGFnZSBpbmZvcm1hdGlvbiAqL31cbiAgICAgICAgICA8TGluayBhcz17YCR7dmVuZG9yLnNob3BfdXJsfWB9IGhyZWY9e2Avc2hvcC8/aWQ9JHt2ZW5kb3IuaWR9YH0+XG4gICAgICAgICAgICA8YT5WZW5kb3IgcGFnZTwvYT5cbiAgICAgICAgICA8L0xpbms+IFxuICAgICAgICA8L2Rpdj5cbiAgICAgICk7XG4gICAgfSl9XG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBpbWd7XG4gICAgICAgICAgICBwYWRkaW5nLXRvcDogNDBweFxuICAgICAgICB9XG4gICAgICAgIGB9XG5cbiAgICA8L3N0eWxlPlxuICA8L0xheW91dD5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEluZGV4O1xuIl19 */\n/*@ sourceURL=/Users/Guido/Desktop/final-project/pages/index.js */"));
+  }, "img.jsx-3116291883{padding-top:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0JnQixBQUlRLGlCQUFDIiwiZmlsZSI6Ii9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgdmVuZG9ycyBmcm9tIFwiLi4vdmVuZG9ycy5qc29uXCI7XG5pbXBvcnQgZmV0Y2ggZnJvbSBcImlzb21vcnBoaWMtdW5mZXRjaFwiO1xuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xuaW1wb3J0IExheW91dCBmcm9tIFwiLi4vY29tcG9uZW50cy9MYXlvdXRcIjtcblxuY29uc3QgSW5kZXggPSBwcm9wcyA9PiAoXG4gIDxMYXlvdXQ+XG4gICAgey8qIHNob3cgYWxsIHZlbmRvcnMgaW5mb3JtYXRpb24gKi99XG4gICAge3ZlbmRvcnMuZGF0YS5tYXAodmVuZG9yID0+IHtcbiAgICAgIHJldHVybiAoXG4gICAgICAgIDxkaXYga2V5PXt2ZW5kb3IuaWR9PlxuICAgICAgICAgIDxpbWcgc3JjPXt2ZW5kb3IubG9nb30gd2lkdGg9XCIxNTBweFwiIC8+XG4gICAgICAgICAgPGgxPnt2ZW5kb3IubmFtZX08L2gxPlxuICAgICAgICAgIDxwPnt2ZW5kb3IuZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgIHsvKiBsaW5rIHRvIHJlbGF0aXZlIHNob3AgcGFnZSBpbmZvcm1hdGlvbiAqL31cbiAgICAgICAgICB7LyogPExpbmsgYXM9e2Ake3ZlbmRvci5zaG9wX3VybH1gfSBocmVmPXtgL3Nob3AvP3ZlbmRvcl9pZD0ke3ZlbmRvci52ZW5kb3JfaWR9YH0+ICovfVxuICAgICAgICAgIDxMaW5rIGhyZWY9e2Avc2hvcC8/dmVuZG9yX2lkPSR7dmVuZG9yLnZlbmRvcl9pZH1gfT5cbiAgICAgICAgICAgIDxhPlZlbmRvciBwYWdlPC9hPlxuICAgICAgICAgIDwvTGluaz4gXG4gICAgICAgIDwvZGl2PlxuICAgICAgKTtcbiAgICB9KX1cbiAgICA8c3R5bGUganN4PntgXG4gICAgICAgIGltZ3tcbiAgICAgICAgICAgIHBhZGRpbmctdG9wOiA0MHB4XG4gICAgICAgIH1cbiAgICAgICAgYH1cblxuICAgIDwvc3R5bGU+XG4gIDwvTGF5b3V0PlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7XG4iXX0= */\n/*@ sourceURL=/Users/Guido/Desktop/final-project/pages/index.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -1607,11 +1606,11 @@ var Index = function Index(props) {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"vendor_id":0,"name":"Bjt","logo":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","desc":"Organic honey and passion.","shop_url":"bjt","products":[{"id":"0","name":"honey","desc":"organic honey","price":"9€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey"},{"id":"1","name":"honey2","desc":"organic honey2 description","price":"6€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-2"},{"id":"2","name":"honey3","desc":"organic honey3 description","price":"6.5€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-3"}]},{"vendor_id":1,"name":"Rinci","logo":"https://www.rinci.it/wp-content/uploads/2018/05/rinci-logo-preloader.png","desc":"Authentic flavors, fresh and organic ingredients.","shop_url":"rinci","products":[{"id":"0","name":"sea fennel","desc":"natural grass","price":"10€","img":"https://www.rinci.it/wp-content/uploads/2019/04/salsa-di-paccasassi_new.jpg","product_url":"sea-fennel"},{"id":"1","name":"sea fennel pesto","desc":"sea fennel pesto description","price":"6€","img":"https://www.rinci.it/wp-content/uploads/2019/04/pesto-di-paccasassi_new.jpg","product_url":"sea-fennel-pesto"},{"id":"2","name":"sea fennel mayo","desc":"sea fennel mayo description","price":"16€","img":"https://www.rinci.it/wp-content/uploads/2019/04/maione-e-paccasassi_new.jpg","product_url":"sea-fennel-mayo"}]},{"vendor_id":2,"name":"Angeli di Varano","logo":"https://www.lovelyancona.it/wp-content/uploads/2017/04/angeli-di-varano.jpg","desc":"Best wine in town","shop_url":"angeli-di-varano","products":[{"id":"0","name":"red wine","desc":"good red wine","price":"10€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"red-wine"},{"id":"1","name":"white wine","desc":"very good white wine","price":"6€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"white-wine"},{"id":"2","name":"rosè wine","desc":"very good rosè wine","price":"16€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"rose-wine"}]}]};
+module.exports = {"data":[{"vendor_id":0,"name":"Bjt","logo":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","desc":"Organic honey and passion.","shop_url":"bjt","products":[{"product_id":"0","name":"honey","desc":"organic honey","price":"9€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey","weight":"1kg"},{"product_id":"1","name":"honey2","desc":"organic honey2 description","price":"6€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-2","weight":"1kg"},{"product_id":"2","name":"honey3","desc":"organic honey3 description","price":"6.5€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-3","weight":"1kg"}]},{"vendor_id":1,"name":"Rinci","logo":"https://www.rinci.it/wp-content/uploads/2018/05/rinci-logo-preloader.png","desc":"Authentic flavors, fresh and organic ingredients.","shop_url":"rinci","products":[{"product_id":"0","name":"sea fennel","desc":"natural grass","price":"10€","img":"https://www.rinci.it/wp-content/uploads/2019/04/salsa-di-paccasassi_new.jpg","product_url":"sea-fennel","weight":"1kg"},{"product_id":"1","name":"sea fennel pesto","desc":"sea fennel pesto description","price":"6€","img":"https://www.rinci.it/wp-content/uploads/2019/04/pesto-di-paccasassi_new.jpg","product_url":"sea-fennel-pesto","weight":"1kg"},{"product_id":"2","name":"sea fennel mayo","desc":"sea fennel mayo description","price":"16€","img":"https://www.rinci.it/wp-content/uploads/2019/04/maione-e-paccasassi_new.jpg","product_url":"sea-fennel-mayo","weight":"1kg"}]},{"vendor_id":2,"name":"Angeli di Varano","logo":"https://www.lovelyancona.it/wp-content/uploads/2017/04/angeli-di-varano.jpg","desc":"Best wine in town","shop_url":"angeli-di-varano","products":[{"product_id":"0","name":"red wine","desc":"good red wine","price":"10€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"red-wine","weight":"1kg"},{"product_id":"1","name":"white wine","desc":"very good white wine","price":"6€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"white-wine","weight":"1kg"},{"product_id":"2","name":"rosè wine","desc":"very good rosè wine","price":"16€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"rose-wine","weight":"1kg"}]}]};
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

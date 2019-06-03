@@ -13,7 +13,8 @@ const Index = props => (
           <h1>{vendor.name}</h1>
           <p>{vendor.description}</p>
           {/* link to relative shop page information */}
-          <Link as={`${vendor.shop_url}`} href={`/shop/?id=${vendor.id}`}>
+          {/* <Link as={`${vendor.shop_url}`} href={`/shop/?vendor_id=${vendor.vendor_id}`}> */}
+          <Link href={`/shop/?vendor_id=${vendor.vendor_id}`}>
             <a>Vendor page</a>
           </Link> 
         </div>

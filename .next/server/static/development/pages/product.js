@@ -93,6 +93,109 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/AddToCartComponent.js":
+/*!******************************************!*\
+  !*** ./components/AddToCartComponent.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/Guido/Desktop/final-project/components/AddToCartComponent.js";
+
+
+var AddToCartComponent =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(AddToCartComponent, _Component);
+
+  function AddToCartComponent() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, AddToCartComponent);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(AddToCartComponent)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      quantity: "",
+      img: "",
+      name: "",
+      desc: "",
+      price: "",
+      weight: ""
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleSubmit", function (e) {
+      e.preventDefault();
+
+      _this.props.addProduct(_this.state);
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(AddToCartComponent, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
+        onSubmit: this.handleSubmit,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, "add to cart"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, this.props.name)));
+    }
+  }]);
+
+  return AddToCartComponent;
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (AddToCartComponent);
+
+/***/ }),
+
 /***/ "./components/Footer.js":
 /*!******************************!*\
   !*** ./components/Footer.js ***!
@@ -172,32 +275,32 @@ var Header = function Header(props) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/Guido/Desktop/final-project/components/Layout.js";
 
 
 
 
 var Layout = function Layout(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), props.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), props.children, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: this
   }));
@@ -259,6 +362,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "core-js/library/fn/object/set-prototype-of");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/parse-int */ "core-js/library/fn/parse-int");
 
 /***/ }),
 
@@ -417,6 +531,36 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -1727,20 +1871,28 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _vendors_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../vendors.json */ "./vendors.json");
-var _vendors_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../vendors.json */ "./vendors.json", 1);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_AddToCartComponent__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/AddToCartComponent */ "./components/AddToCartComponent.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _vendors_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../vendors.json */ "./vendors.json");
+var _vendors_json__WEBPACK_IMPORTED_MODULE_12___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../vendors.json */ "./vendors.json", 1);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_13__);
+
+
+
 
 
 
@@ -1751,70 +1903,142 @@ var _jsxFileName = "/Users/Guido/Desktop/final-project/pages/product.js";
 
 
 
- // const Products = ({ url }) =>
-//   console.log(url.query) || (
-//     <Layout>
-//       {/* show relative product information - receive url.query.vendor from shop page, so I can access the right vendor in the array  */}
-// <img src={vendors.data[url.query.vendor].products[url.query.id].img} />
-// <h1>{vendors.data[url.query.vendor].products[url.query.id].name}</h1>
-// <p> {vendors.data[url.query.vendor].products[url.query.id].desc}</p>
-// <strong>  {vendors.data[url.query.vendor].products[url.query.id].price}</strong>
-//     </Layout>
-//   );
+
+
 
 var Products =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Products, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Products, _Component);
 
   function Products() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Products);
+    var _getPrototypeOf2;
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Products).apply(this, arguments));
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Products);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Products)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
+      quantity: 1,
+      img: _vendors_json__WEBPACK_IMPORTED_MODULE_12__.data[_this.props.query.vendor_id].products[_this.props.query.product_id].img,
+      name: _vendors_json__WEBPACK_IMPORTED_MODULE_12__.data[_this.props.query.vendor_id].products[_this.props.query.product_id].name,
+      desc: _vendors_json__WEBPACK_IMPORTED_MODULE_12__.data[_this.props.query.vendor_id].products[_this.props.query.product_id].desc,
+      price: _vendors_json__WEBPACK_IMPORTED_MODULE_12__.data[_this.props.query.vendor_id].products[_this.props.query.product_id].price,
+      weight: _vendors_json__WEBPACK_IMPORTED_MODULE_12__.data[_this.props.query.vendor_id].products[_this.props.query.product_id].weight
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "increaseQuantiy", function () {
+      _this.setState({
+        quantity: _this.state.quantity + 1
+      });
+
+      console.log(_this.state);
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "decreaseQuantity", function () {
+      if (_this.state.quantity <= 1) {
+        // prevent quantity below 0 
+        _this.setState({
+          quantity: _this.state.quantity = 1
+        });
+      } else {
+        _this.setState({
+          quantity: _this.state.quantity - 1
+        });
+      }
+    });
+
+    return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Products, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Products, [{
     key: "render",
     value: function render() {
-      console.log(this.props.query);
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      console.log(this.props);
+      return react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 55
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-        src: _vendors_json__WEBPACK_IMPORTED_MODULE_8__.data[this.props.query.vendor].products[this.props.query.id].img,
+      }, react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("img", {
+        src: this.state.img,
         width: "120px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 56
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
+      }), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 62
         },
         __self: this
-      }, _vendors_json__WEBPACK_IMPORTED_MODULE_8__.data[this.props.query.vendor].products[this.props.query.id].name), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+      }, this.state.name), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 67
         },
         __self: this
-      }, _vendors_json__WEBPACK_IMPORTED_MODULE_8__.data[this.props.query.vendor].products[this.props.query.id].desc), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", {
+      }, this.state.desc), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 72
         },
         __self: this
-      }, _vendors_json__WEBPACK_IMPORTED_MODULE_8__.data[this.props.query.vendor].products[this.props.query.id].price));
+      }, this.state.weight), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, "Quantity: ", this.state.quantity), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("button", {
+        onClick: this.increaseQuantiy,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, "increase quantity"), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("button", {
+        onClick: this.decreaseQuantity,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
+      }, "decrease quantity"), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(this.state.price) * this.state.quantity, " \u20AC"), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(_components_AddToCartComponent__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        name: this.state.name,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87
+        },
+        __self: this
+      }, this.props.test));
     }
   }], [{
     key: "getInitialProps",
     value: function getInitialProps(_ref) {
       var query = _ref.query;
+      console.log(query);
       return {
         query: query
       };
@@ -1822,7 +2046,7 @@ function (_Component) {
   }]);
 
   return Products;
-}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_11__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Products);
 
@@ -1835,7 +2059,7 @@ function (_Component) {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = {"data":[{"vendor_id":0,"name":"Bjt","logo":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","desc":"Organic honey and passion.","shop_url":"bjt","products":[{"id":"0","name":"honey","desc":"organic honey","price":"9€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey"},{"id":"1","name":"honey2","desc":"organic honey2 description","price":"6€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-2"},{"id":"2","name":"honey3","desc":"organic honey3 description","price":"6.5€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-3"}]},{"vendor_id":1,"name":"Rinci","logo":"https://www.rinci.it/wp-content/uploads/2018/05/rinci-logo-preloader.png","desc":"Authentic flavors, fresh and organic ingredients.","shop_url":"rinci","products":[{"id":"0","name":"sea fennel","desc":"natural grass","price":"10€","img":"https://www.rinci.it/wp-content/uploads/2019/04/salsa-di-paccasassi_new.jpg","product_url":"sea-fennel"},{"id":"1","name":"sea fennel pesto","desc":"sea fennel pesto description","price":"6€","img":"https://www.rinci.it/wp-content/uploads/2019/04/pesto-di-paccasassi_new.jpg","product_url":"sea-fennel-pesto"},{"id":"2","name":"sea fennel mayo","desc":"sea fennel mayo description","price":"16€","img":"https://www.rinci.it/wp-content/uploads/2019/04/maione-e-paccasassi_new.jpg","product_url":"sea-fennel-mayo"}]},{"vendor_id":2,"name":"Angeli di Varano","logo":"https://www.lovelyancona.it/wp-content/uploads/2017/04/angeli-di-varano.jpg","desc":"Best wine in town","shop_url":"angeli-di-varano","products":[{"id":"0","name":"red wine","desc":"good red wine","price":"10€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"red-wine"},{"id":"1","name":"white wine","desc":"very good white wine","price":"6€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"white-wine"},{"id":"2","name":"rosè wine","desc":"very good rosè wine","price":"16€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"rose-wine"}]}]};
+module.exports = {"data":[{"vendor_id":0,"name":"Bjt","logo":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","desc":"Organic honey and passion.","shop_url":"bjt","products":[{"product_id":"0","name":"honey","desc":"organic honey","price":"9€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey","weight":"1kg"},{"product_id":"1","name":"honey2","desc":"organic honey2 description","price":"6€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-2","weight":"1kg"},{"product_id":"2","name":"honey3","desc":"organic honey3 description","price":"6.5€","img":"https://scontent.cdninstagram.com/vp/32e1f51f6b0d69ba0404d035016faeb0/5D558FE2/t51.2885-15/e35/c0.44.1080.1080/s480x480/46263745_2258246997790808_4915867594591644781_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com","product_url":"honey-3","weight":"1kg"}]},{"vendor_id":1,"name":"Rinci","logo":"https://www.rinci.it/wp-content/uploads/2018/05/rinci-logo-preloader.png","desc":"Authentic flavors, fresh and organic ingredients.","shop_url":"rinci","products":[{"product_id":"0","name":"sea fennel","desc":"natural grass","price":"10€","img":"https://www.rinci.it/wp-content/uploads/2019/04/salsa-di-paccasassi_new.jpg","product_url":"sea-fennel","weight":"1kg"},{"product_id":"1","name":"sea fennel pesto","desc":"sea fennel pesto description","price":"6€","img":"https://www.rinci.it/wp-content/uploads/2019/04/pesto-di-paccasassi_new.jpg","product_url":"sea-fennel-pesto","weight":"1kg"},{"product_id":"2","name":"sea fennel mayo","desc":"sea fennel mayo description","price":"16€","img":"https://www.rinci.it/wp-content/uploads/2019/04/maione-e-paccasassi_new.jpg","product_url":"sea-fennel-mayo","weight":"1kg"}]},{"vendor_id":2,"name":"Angeli di Varano","logo":"https://www.lovelyancona.it/wp-content/uploads/2017/04/angeli-di-varano.jpg","desc":"Best wine in town","shop_url":"angeli-di-varano","products":[{"product_id":"0","name":"red wine","desc":"good red wine","price":"10€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"red-wine","weight":"1kg"},{"product_id":"1","name":"white wine","desc":"very good white wine","price":"6€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"white-wine","weight":"1kg"},{"product_id":"2","name":"rosè wine","desc":"very good rosè wine","price":"16€","img":"https://www.wineilvino.it/wp-content/uploads/2017/03/Rosso-conero-primo-di-tre-angeli-di-varano.jpg","product_url":"rose-wine","weight":"1kg"}]}]};
 
 /***/ }),
 
@@ -1903,6 +2127,17 @@ module.exports = require("core-js/library/fn/object/get-prototype-of");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/set-prototype-of");
+
+/***/ }),
+
+/***/ "core-js/library/fn/parse-int":
+/*!***********************************************!*\
+  !*** external "core-js/library/fn/parse-int" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/parse-int");
 
 /***/ }),
 
