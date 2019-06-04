@@ -5,7 +5,7 @@ import React, { Component } from "react";
 
 const Layout = props => (   
     <div>
-        <Header />
+        
         {props.children}
         <Footer />
 

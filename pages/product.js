@@ -22,11 +22,11 @@ class Product extends Component {
     weight:   vendors.data[this.props.query.vendor_id].products[
       this.props.query.product_id
     ].weight,
+    
 
   };
 
   static getInitialProps({ query }) {
-    console.log(query)
     return { query };
   }
 
@@ -34,7 +34,6 @@ class Product extends Component {
     this.setState({
       quantity: this.state.quantity + 1
     });
-    console.log(this.state)
   };
   decreaseQuantity = () => {
     if (this.state.quantity <= 1) { // prevent quantity below 0 
@@ -54,7 +53,6 @@ class Product extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <Layout>
 
@@ -91,7 +89,6 @@ class Product extends Component {
         
         <Link href="/cart"><a>view cart</a></Link>
     
-            
       </Layout>
     );
   }

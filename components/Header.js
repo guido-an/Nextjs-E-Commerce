@@ -1,10 +1,12 @@
-import CartIcon from './CartIcon'
 
-const Header = props => (
+import Link from 'next/link'
+const Header = (props) => (
   <header>
-    header
-    {console.log()}
-    <CartIcon />
+  
+  
+   <Link href="/cart"><a> products in cart: {props.productsInCart.length}</a></Link>
+   <Link href="/"><a>back to shop</a></Link>
+   
     <style jsx>{`
       background-color: #f7f7f7;
       padding: 40px;
