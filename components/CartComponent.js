@@ -14,8 +14,10 @@ class CartComponent extends Component {
   render() {
     return (
       <div>
-        cart component
-        <AddToCartComponent />
+        ***** cart component *****
+        <p>{this.props.user}</p>
+        <p>{this.props.name}</p>
+        *****  *****
       </div>
     );
   }

@@ -1,5 +1,8 @@
 import React from 'react'
 import App, { Container } from 'next/app'
+import CartComponent from "../components/CartComponent";
+import AddToCartComponent from '../components/AddToCartComponent';
+
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -13,7 +16,13 @@ class MyApp extends App {
   }
 
   state = {
-    test: "test",
+    ninjas: [
+
+    ]
+  }
+
+  addNinja = (ninja) => {
+     console.log(ninja)
   }
 
   render() {
@@ -21,8 +30,11 @@ class MyApp extends App {
 
     return (
       <Container>
+      <p>app_js</p>
+     
+       <pre>{JSON.stringify(this.state, "\t", 2)}</pre> 
         <Component {...pageProps} {...this.state} />
-        <p>hello</p>
+       <AddToCartComponent addNinja={this.addNinja}/>
       </Container>
     )
   }

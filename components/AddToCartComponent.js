@@ -12,7 +12,10 @@ class AddToCartComponent extends Component {
 
   handleSubmit = e => {
     e.preventDefault(); 
-    this.props.addProduct(this.state); 
+    this.props.addNinja(this.state); 
+    this.setState({
+    quantity: this.state.quantity
+    })
   };
 
   render() {
@@ -20,8 +23,7 @@ class AddToCartComponent extends Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <button>add to cart</button>
-          <h1>{this.props.name}</h1>
-         
+           <h1>{this.props.test}</h1>
         </form>
       </div>
     );

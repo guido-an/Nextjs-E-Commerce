@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import AddToCartComponent from "../components/AddToCartComponent";
+import CartComponent from "../components/CartComponent";
 
 import Link from "next/link";
 import React, { Component } from "react";
@@ -49,10 +50,16 @@ class Products extends Component {
     }
   };
 
+  getObject = () => {
+    console.log(this.state)
+  }
+
   render() {
     console.log(this.props)
     return (
       <Layout>
+      <CartComponent user={this.props.user} name={this.state.name} /> 
+
         <img
           src={
             this.state.img
@@ -80,11 +87,11 @@ class Products extends Component {
         <button onClick={this.decreaseQuantity}>decrease quantity</button>
 
        <h2>{parseInt(this.state.price) * this.state.quantity} €</h2>
+
+
+       <Link href="/cart"><a>cart</a></Link>
         
             {/* <pre>{JSON.stringify(window.localStorage.getItem('product'), "\t", 2)}</pre> */}
-
-          <AddToCartComponent name={this.state.name} />
-          <h1>{this.props.test}</h1>
       </Layout>
     );
   }

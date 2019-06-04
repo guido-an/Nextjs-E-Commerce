@@ -11,6 +11,7 @@ class Cart extends Component {
             <Layout>
            
            <CartComponent />
+            
             </Layout>  
         )
     }
