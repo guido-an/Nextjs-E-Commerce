@@ -1,7 +1,6 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import CartComponent from "../components/CartComponent";
-import AddToCartComponent from '../components/AddToCartComponent';
+
 
 
 class MyApp extends App {
@@ -16,13 +15,27 @@ class MyApp extends App {
   }
 
   state = {
-    ninjas: [
-
+    productsInCart: [
+     
     ]
   }
 
-  addNinja = (ninja) => {
-     console.log(ninja)
+  updateCart = (product) => {
+    console.log(product)
+    let productsInCart = [...this.state.productsInCart, product]
+    this.setState({
+      productsInCart: productsInCart
+    })
+  }
+
+  deleteProduct = (name) => {
+     console.log(name)
+     let productsInCart = this.state.productsInCart.filter(product => {
+       return product.name != name
+     })
+     this.setState({
+      productsInCart: productsInCart
+     })
   }
 
   render() {
@@ -30,11 +43,11 @@ class MyApp extends App {
 
     return (
       <Container>
-      <p>app_js</p>
      
+      <p>app_js</p>
        <pre>{JSON.stringify(this.state, "\t", 2)}</pre> 
-        <Component {...pageProps} {...this.state} />
-       <AddToCartComponent addNinja={this.addNinja}/>
+        <Component updateCart={this.updateCart} deleteProduct={this.deleteProduct} {...pageProps} {...this.state} />
+
       </Container>
     )
   }

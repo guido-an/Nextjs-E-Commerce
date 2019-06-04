@@ -1,13 +1,10 @@
 import Layout from "../components/Layout";
-import AddToCartComponent from "../components/AddToCartComponent";
-import CartComponent from "../components/CartComponent";
-
 import Link from "next/link";
 import React, { Component } from "react";
 import vendors from "../vendors.json";
 import fetch from "isomorphic-unfetch";
 
-class Products extends Component {
+class Product extends Component {
   state = {
     quantity: 1,
     img: vendors.data[this.props.query.vendor_id].products[
@@ -24,7 +21,8 @@ class Products extends Component {
     ].price,
     weight:   vendors.data[this.props.query.vendor_id].products[
       this.props.query.product_id
-    ].weight
+    ].weight,
+
   };
 
   static getInitialProps({ query }) {
@@ -49,16 +47,16 @@ class Products extends Component {
       });
     }
   };
-
-  getObject = () => {
-    console.log(this.state)
+  
+  handleSubmit = (e) => {
+    e.preventDefault()
+     this.props.updateCart(this.state)
   }
 
   render() {
     console.log(this.props)
     return (
       <Layout>
-      <CartComponent user={this.props.user} name={this.state.name} /> 
 
         <img
           src={
@@ -88,13 +86,18 @@ class Products extends Component {
 
        <h2>{parseInt(this.state.price) * this.state.quantity} €</h2>
 
-
-       <Link href="/cart"><a>cart</a></Link>
+           
+          <button onClick={() => this.props.updateCart(this.state)}>UPDATE CART </button>
         
-            {/* <pre>{JSON.stringify(window.localStorage.getItem('product'), "\t", 2)}</pre> */}
+        <Link href="/cart"><a>view cart</a></Link>
+    
+            
       </Layout>
     );
   }
 }
 
-export default Products;
+export default Product;
+
+
+
