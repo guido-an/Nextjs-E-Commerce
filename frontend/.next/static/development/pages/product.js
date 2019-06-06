@@ -11181,10 +11181,6 @@ function (_Component) {
     }
   }, {
     key: "render",
-    // handleSubmit = e => {
-    //   e.preventDefault();
-    //   this.props.updateCart(this.state);
-    // };
     value: function render() {
       var _this2 = this;
 
@@ -11244,7 +11240,7 @@ function (_Component) {
       }, "decrease quantity"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 76
         },
         __self: this
       }, _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(product.price) * this.state.quantity, " \u20AC"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("button", {
@@ -11253,20 +11249,20 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 78
         },
         __self: this
       }, "UPDATE CART"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         href: "/cart",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 82
         },
         __self: this
       }, "view cart")));

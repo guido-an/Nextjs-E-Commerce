@@ -37,10 +37,13 @@ class Product extends Component {
   }
 
   increaseQuantiy = () => {
+  
     this.setState({
       quantity: this.state.quantity + 1
     });
   };
+
+
   decreaseQuantity = () => {
     if (this.state.quantity <= 1) {
       // prevent quantity below 0
@@ -54,10 +57,7 @@ class Product extends Component {
     }
   };
 
-  // handleSubmit = e => {
-  //   e.preventDefault();
-  //   this.props.updateCart(this.state);
-  // };
+
 
   render() {
     const { product } = this.props;
@@ -71,6 +71,8 @@ class Product extends Component {
         <p>Quantity: {this.state.quantity}</p>
         <button onClick={this.increaseQuantiy}>increase quantity</button>
         <button onClick={this.decreaseQuantity}>decrease quantity</button>
+   
+
         <h2>{parseInt(product.price) * this.state.quantity} €</h2>
         {/* function passed down by _app.js */}
         <button onClick={() => this.props.updateCart(this.state)}>

@@ -37,13 +37,12 @@ class MyApp extends App {
        return product.id != id
      })
      this.setState({
-      productsInCart: productsInCart
+      productsInCart: productsInCart,
+     
      })
   }
 
-  increaseProductQuantity = (product) =>{
-    console.log(product)
-  }
+  
   render() {
     const { Component, pageProps } = this.props
 
