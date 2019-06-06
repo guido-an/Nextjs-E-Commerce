@@ -33,7 +33,6 @@ class MyApp extends App {
   }
 
   deleteProduct = (id) => { 
-   
      let productsInCart = this.state.productsInCart.filter(product => {
        return product.id != id
      })
@@ -42,6 +41,9 @@ class MyApp extends App {
      })
   }
 
+  increaseProductQuantity = (product) =>{
+    console.log(product)
+  }
   render() {
     const { Component, pageProps } = this.props
 
@@ -51,7 +53,6 @@ class MyApp extends App {
        <pre>{JSON.stringify(this.state, "\t", 2)}</pre> 
        <Header {...this.state} />
         <Component updateCart={this.updateCart} deleteProduct={this.deleteProduct} {...pageProps} {...this.state} />
-   
       </Container>
     )
   }

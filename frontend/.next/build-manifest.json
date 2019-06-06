@@ -26,6 +26,10 @@
     "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/product": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

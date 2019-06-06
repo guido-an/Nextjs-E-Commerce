@@ -6,8 +6,7 @@ import fetch from "isomorphic-unfetch";
 
 class Shop extends Component {
   static async getInitialProps({ query }) {
-    
-    // get the vendors API from backend index.js
+    // get the single vendor API from backend index.js with query params
     const res = await fetch(
       `http://localhost:5000/vendor/?vendor_id=${query.vendor_id}`
     ); 
