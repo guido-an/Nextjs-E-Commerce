@@ -8,7 +8,8 @@ const vendorSchema = new Schema(
     logo: String,
     desc: String,
     shop_url: String,
-    products: Array
+    products: Array,
+    vendor_name: String
   },
   {
     timestamps: {

@@ -22,17 +22,19 @@ class Product extends Component {
     name: "",
     desc: "",
     price: "",
-    weight: ""
+    weight: "",
+    vendor_name: ""
   };
 
   componentDidMount() {
-    const { img, name, desc, price, weight } = this.props.product; // receive the product from getInitialProps 
+    const { img, name, desc, price, weight, vendor_name } = this.props.product; // receive the product from getInitialProps 
     this.setState({
       img: img,
       name: name,
       desc: desc,
       price: price,
-      weight: weight
+      weight: weight,
+      vendor_name: vendor_name
     });
   }
 

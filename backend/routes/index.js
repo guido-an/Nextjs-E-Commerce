@@ -55,4 +55,6 @@ router.get('/product/:vendor_id/:product_id', (req, res, next) => {
   })
 })
 
+/* 3)  */
+
 module.exports = router;
