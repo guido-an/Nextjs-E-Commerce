@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/Guido/Desktop/final-project/frontend/components/Footer.js";
+var _jsxFileName = "/Users/Guido/Desktop/final-project 2/frontend/components/Footer.js";
 
 
 
@@ -28,7 +28,7 @@ var Footer = function Footer(props) {
   }, "@copyright  ", new Date().getFullYear(), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "3356585655",
     __self: this
-  }, ".jsx-3356585655{background-color:#f7f7f7;padding:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvZnJvbnRlbmQvY29tcG9uZW50cy9Gb290ZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBSWtCLEFBRWtDLHlCQUNaLGFBQ2YiLCJmaWxlIjoiL1VzZXJzL0d1aWRvL0Rlc2t0b3AvZmluYWwtcHJvamVjdC9mcm9udGVuZC9jb21wb25lbnRzL0Zvb3Rlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuY29uc3QgRm9vdGVyID0gcHJvcHMgPT4gKFxuICAgIDxmb290ZXI+XG4gICAgICBAY29weXJpZ2h0ICB7bmV3IERhdGUoKS5nZXRGdWxsWWVhcigpfVxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjdmN2Y3O1xuICAgICAgICBwYWRkaW5nOiA0MHB4O1xuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZm9vdGVyPlxuICApO1xuICBcblxuICBcbmV4cG9ydCBkZWZhdWx0IEZvb3RlciJdfQ== */\n/*@ sourceURL=/Users/Guido/Desktop/final-project/frontend/components/Footer.js */"));
+  }, ".jsx-3356585655{background-color:#f7f7f7;padding:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QgMi9mcm9udGVuZC9jb21wb25lbnRzL0Zvb3Rlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJa0IsQUFFa0MseUJBQ1osYUFDZiIsImZpbGUiOiIvVXNlcnMvR3VpZG8vRGVza3RvcC9maW5hbC1wcm9qZWN0IDIvZnJvbnRlbmQvY29tcG9uZW50cy9Gb290ZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmNvbnN0IEZvb3RlciA9IHByb3BzID0+IChcbiAgICA8Zm9vdGVyPlxuICAgICAgQGNvcHlyaWdodCAge25ldyBEYXRlKCkuZ2V0RnVsbFllYXIoKX1cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2Y3ZjdmNztcbiAgICAgICAgcGFkZGluZzogNDBweDtcbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Zvb3Rlcj5cbiAgKTtcbiAgXG5cbiAgXG5leHBvcnQgZGVmYXVsdCBGb290ZXIiXX0= */\n/*@ sourceURL=/Users/Guido/Desktop/final-project 2/frontend/components/Footer.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -50,7 +50,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/Guido/Desktop/final-project/frontend/components/Header.js";
+var _jsxFileName = "/Users/Guido/Desktop/final-project 2/frontend/components/Header.js";
 
 
 
@@ -94,7 +94,7 @@ var Header = function Header(props) {
   }, "back to shop")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "679991876",
     __self: this
-  }, ".jsx-679991876{background-color:#f7f7f7;padding:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvZnJvbnRlbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2dCLEFBRWdDLHlCQUNaLGFBQ2YiLCJmaWxlIjoiL1VzZXJzL0d1aWRvL0Rlc2t0b3AvZmluYWwtcHJvamVjdC9mcm9udGVuZC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuY29uc3QgSGVhZGVyID0gKHByb3BzKSA9PiAoXG4gIDxoZWFkZXI+XG4gIFxuICBcbiAgIDxMaW5rIGhyZWY9XCIvY2FydFwiPjxhPiBwcm9kdWN0cyBpbiBjYXJ0OiB7cHJvcHMucHJvZHVjdHNJbkNhcnQubGVuZ3RofTwvYT48L0xpbms+XG4gICA8TGluayBocmVmPVwiL1wiPjxhPmJhY2sgdG8gc2hvcDwvYT48L0xpbms+XG4gICBcbiAgICA8c3R5bGUganN4PntgXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjdmN2Y3O1xuICAgICAgcGFkZGluZzogNDBweDtcbiAgICBgfTwvc3R5bGU+XG4gIDwvaGVhZGVyPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyO1xuIl19 */\n/*@ sourceURL=/Users/Guido/Desktop/final-project/frontend/components/Header.js */"));
+  }, ".jsx-679991876{background-color:#f7f7f7;padding:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QgMi9mcm9udGVuZC9jb21wb25lbnRzL0hlYWRlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTZ0IsQUFFZ0MseUJBQ1osYUFDZiIsImZpbGUiOiIvVXNlcnMvR3VpZG8vRGVza3RvcC9maW5hbC1wcm9qZWN0IDIvZnJvbnRlbmQvY29tcG9uZW50cy9IZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcbmNvbnN0IEhlYWRlciA9IChwcm9wcykgPT4gKFxuICA8aGVhZGVyPlxuICBcbiAgXG4gICA8TGluayBocmVmPVwiL2NhcnRcIj48YT4gcHJvZHVjdHMgaW4gY2FydDoge3Byb3BzLnByb2R1Y3RzSW5DYXJ0Lmxlbmd0aH08L2E+PC9MaW5rPlxuICAgPExpbmsgaHJlZj1cIi9cIj48YT5iYWNrIHRvIHNob3A8L2E+PC9MaW5rPlxuICAgXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2Y3ZjdmNztcbiAgICAgIHBhZGRpbmc6IDQwcHg7XG4gICAgYH08L3N0eWxlPlxuICA8L2hlYWRlcj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEhlYWRlcjtcbiJdfQ== */\n/*@ sourceURL=/Users/Guido/Desktop/final-project 2/frontend/components/Header.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/Guido/Desktop/final-project/frontend/components/Layout.js";
+var _jsxFileName = "/Users/Guido/Desktop/final-project 2/frontend/components/Layout.js";
 
 
 
@@ -5705,10 +5705,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%2Ffrontend%2Fpages%2Findex.js!./":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%2Ffrontend%2Fpages%2Findex.js ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%202%2Ffrontend%2Fpages%2Findex.js!./":
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%202%2Ffrontend%2Fpages%2Findex.js ***!
+  \*****************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10955,7 +10955,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/Guido/Desktop/final-project/frontend/pages/index.js";
+var _jsxFileName = "/Users/Guido/Desktop/final-project 2/frontend/pages/index.js";
 
 
 
@@ -11034,7 +11034,7 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
         id: "668413829",
         __self: this
-      }, "img.jsx-668413829{padding-top:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvZnJvbnRlbmQvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZ0NXLEFBR2dDLGlCQUNuQiIsImZpbGUiOiIvVXNlcnMvR3VpZG8vRGVza3RvcC9maW5hbC1wcm9qZWN0L2Zyb250ZW5kL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGZldGNoIGZyb20gXCJpc29tb3JwaGljLXVuZmV0Y2hcIjtcbmltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcbmltcG9ydCBMYXlvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvTGF5b3V0XCI7XG5pbXBvcnQgUmVhY3QsIHsgQ29tcG9uZW50IH0gZnJvbSBcInJlYWN0XCI7XG5cbmNsYXNzIEluZGV4IGV4dGVuZHMgQ29tcG9uZW50IHtcbiAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcygpIHtcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChcImh0dHA6Ly9sb2NhbGhvc3Q6NTAwMC92ZW5kb3JzXCIpOyAvLyBnZXQgdGhlIHZlbmRvcnMgQVBJIGZyb20gYmFja2VuZCByb3V0ZXMvaW5kZXguanNcbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTsgLy8gc3RvcmUgdGhlIHJlc3VsdFxuICAgIHJldHVybiB7IHZlbmRvcnM6IGRhdGEgfTsgLy8gcmV0dXJuIHRoZSByZXN1bHRcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICBjb25zdCB7IHZlbmRvcnMgfSA9IHRoaXMucHJvcHM7IC8vIGRlY3VzdHJ1Y3RpbmcgdGhlIG9iamVjdFxuICAgIHJldHVybiAoXG4gICAgICA8TGF5b3V0PlxuICAgICAgICB7Lyogc2hvdyBhbGwgdmVuZG9ycyBpbmZvcm1hdGlvbiAqL31cbiAgICAgICAge3ZlbmRvcnMubWFwKHZlbmRvciA9PiB7XG4gICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgIDxkaXYga2V5PXt2ZW5kb3IuaWR9PlxuICAgICAgICAgICAgICA8aW1nIHNyYz17dmVuZG9yLmxvZ299IHdpZHRoPVwiMTUwcHhcIiAvPlxuICAgICAgICAgICAgICA8aDE+e3ZlbmRvci5uYW1lfTwvaDE+XG4gICAgICAgICAgICAgIDxwPnt2ZW5kb3IuZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgICAgICB7LyogbGluayB0byByZWxhdGl2ZSBzaG9wIHBhZ2UgaW5mb3JtYXRpb24gKi99XG4gICAgICAgICAgICAgIHsvKiA8TGluayBhcz17YCR7dmVuZG9yLnNob3BfdXJsfWB9IGhyZWY9e2Avc2hvcC8/dmVuZG9yX2lkPSR7dmVuZG9yLnZlbmRvcl9pZH1gfT4gKi99XG4gICAgICAgICAgICAgIDxMaW5rIGhyZWY9e2Avc2hvcC8/dmVuZG9yX2lkPSR7dmVuZG9yLnZlbmRvcl9pZH1gfT5cbiAgICAgICAgICAgICAgICA8YT5WZW5kb3IgcGFnZTwvYT5cbiAgICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKTtcbiAgICAgICAgfSl9XG4gICAgICAgIDxzdHlsZSBqc3g+XG4gICAgICAgICAge2BcbiAgICAgICAgICAgIGltZyB7XG4gICAgICAgICAgICAgIHBhZGRpbmctdG9wOiA0MHB4O1xuICAgICAgICAgICAgfVxuICAgICAgICAgIGB9XG4gICAgICAgIDwvc3R5bGU+XG4gICAgICA8L0xheW91dD5cbiAgICApO1xuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IEluZGV4O1xuIl19 */\n/*@ sourceURL=/Users/Guido/Desktop/final-project/frontend/pages/index.js */"));
+      }, "img.jsx-668413829{padding-top:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QgMi9mcm9udGVuZC9wYWdlcy9pbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnQ1csQUFHZ0MsaUJBQ25CIiwiZmlsZSI6Ii9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QgMi9mcm9udGVuZC9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBmZXRjaCBmcm9tIFwiaXNvbW9ycGhpYy11bmZldGNoXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgTGF5b3V0IGZyb20gXCIuLi9jb21wb25lbnRzL0xheW91dFwiO1xuaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gXCJyZWFjdFwiO1xuXG5jbGFzcyBJbmRleCBleHRlbmRzIENvbXBvbmVudCB7XG4gIHN0YXRpYyBhc3luYyBnZXRJbml0aWFsUHJvcHMoKSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goXCJodHRwOi8vbG9jYWxob3N0OjUwMDAvdmVuZG9yc1wiKTsgLy8gZ2V0IHRoZSB2ZW5kb3JzIEFQSSBmcm9tIGJhY2tlbmQgcm91dGVzL2luZGV4LmpzXG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7IC8vIHN0b3JlIHRoZSByZXN1bHRcbiAgICByZXR1cm4geyB2ZW5kb3JzOiBkYXRhIH07IC8vIHJldHVybiB0aGUgcmVzdWx0XG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgY29uc3QgeyB2ZW5kb3JzIH0gPSB0aGlzLnByb3BzOyAvLyBkZWN1c3RydWN0aW5nIHRoZSBvYmplY3RcbiAgICByZXR1cm4gKFxuICAgICAgPExheW91dD5cbiAgICAgICAgey8qIHNob3cgYWxsIHZlbmRvcnMgaW5mb3JtYXRpb24gKi99XG4gICAgICAgIHt2ZW5kb3JzLm1hcCh2ZW5kb3IgPT4ge1xuICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICA8ZGl2IGtleT17dmVuZG9yLmlkfT5cbiAgICAgICAgICAgICAgPGltZyBzcmM9e3ZlbmRvci5sb2dvfSB3aWR0aD1cIjE1MHB4XCIgLz5cbiAgICAgICAgICAgICAgPGgxPnt2ZW5kb3IubmFtZX08L2gxPlxuICAgICAgICAgICAgICA8cD57dmVuZG9yLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgey8qIGxpbmsgdG8gcmVsYXRpdmUgc2hvcCBwYWdlIGluZm9ybWF0aW9uICovfVxuICAgICAgICAgICAgICB7LyogPExpbmsgYXM9e2Ake3ZlbmRvci5zaG9wX3VybH1gfSBocmVmPXtgL3Nob3AvP3ZlbmRvcl9pZD0ke3ZlbmRvci52ZW5kb3JfaWR9YH0+ICovfVxuICAgICAgICAgICAgICA8TGluayBocmVmPXtgL3Nob3AvP3ZlbmRvcl9pZD0ke3ZlbmRvci52ZW5kb3JfaWR9YH0+XG4gICAgICAgICAgICAgICAgPGE+VmVuZG9yIHBhZ2U8L2E+XG4gICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICk7XG4gICAgICAgIH0pfVxuICAgICAgICA8c3R5bGUganN4PlxuICAgICAgICAgIHtgXG4gICAgICAgICAgICBpbWcge1xuICAgICAgICAgICAgICBwYWRkaW5nLXRvcDogNDBweDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICBgfVxuICAgICAgICA8L3N0eWxlPlxuICAgICAgPC9MYXlvdXQ+XG4gICAgKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBJbmRleDtcbiJdfQ== */\n/*@ sourceURL=/Users/Guido/Desktop/final-project 2/frontend/pages/index.js */"));
     }
   }], [{
     key: "getInitialProps",
@@ -11084,14 +11084,14 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
-/*!*****************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%2Ffrontend%2Fpages%2Findex.js ***!
-  \*****************************************************************************************************************************************/
+/***/ 2:
+/*!*********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%202%2Ffrontend%2Fpages%2Findex.js ***!
+  \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%2Ffrontend%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%2Ffrontend%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%202%2Ffrontend%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%202%2Ffrontend%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -11107,5 +11107,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -498,14 +498,14 @@ var styles = {
 
 /***/ }),
 
-/***/ 5:
+/***/ 7:
 /*!******************************************************!*\
   !*** multi ./node_modules/next/dist/pages/_error.js ***!
   \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Guido/Desktop/final-project/frontend/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__(/*! /Users/Guido/Desktop/final-project 2/frontend/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
 
 
 /***/ }),

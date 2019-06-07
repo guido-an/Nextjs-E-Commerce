@@ -84,7 +84,7 @@ render() {
       )}
       <h2>Total price cart: {this.state.totalPriceCart}€</h2>
 
-
+ 
       
     </Layout>
   );
