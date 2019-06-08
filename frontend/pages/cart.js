@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../components/Layout";
+import Link from 'next/link'
 
 class Cart extends Component {
   state = {
@@ -84,7 +85,7 @@ render() {
       )}
       <h2>Total price cart: {this.state.totalPriceCart}€</h2>
 
- 
+    <a href="/checkout">checkout</a> 
       
     </Layout>
   );

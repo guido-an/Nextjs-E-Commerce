@@ -4,6 +4,7 @@ import Header from '../components/Header'
 
 
 
+
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {}

@@ -2,17 +2,11 @@ const express = require('express');
 const router  = express.Router();
 const Vendor = require("../models/Vendor");
 const Product = require("../models/Product");
+// const stripe = require("stripe")("sk_test_SGABL1KLFsniwKNBLv1rsWHr00A6YIf7uf");
 
 
-/* GET home page */
-router.get('/', (req, res, next) => {
-  res.render('index');
-});
-
-
-
-
-/* 1) GET VENDORS */ 
+/*****************
+ 1) GET VENDORS */
 router.get('/vendors', (req, res, next) => {
   Vendor.find()
   .then(vendors => {
@@ -23,8 +17,8 @@ router.get('/vendors', (req, res, next) => {
   })
 })
 
-
-/* 2) GET SINGLE VENDOR */ 
+/*************************
+ 2) GET SINGLE VENDOR */
 router.get('/vendor', (req, res, next) => {
   Vendor.findOne({ vendor_id: req.query.vendor_id})
   .then(vendor=> {
@@ -46,16 +40,8 @@ router.get('/vendor', (req, res, next) => {
 //   })
 // })
 
-/* 3) GET SINGLE PRODUCT  with ROUTE params */
-// router.get('/product/:vendor_id/:product_id', (req, res, next) => {
-//   Vendor.findOne({ vendor_id: req.params.vendor_id})
-//   .then(vendor=> {
-//     res.send(vendor.products[req.params.product_id])
-//   })
-//   .catch(err => {
-//     console.log(err)
-//   })
-// })
+/*****************************************
+ 3) GET SINGLE PRODUCT with route params */
 router.get('/product/:product_id', (req, res, next) => {
   Product.findOne({ product_id: req.params.product_id})
   .then(product=> {
@@ -66,7 +52,8 @@ router.get('/product/:product_id', (req, res, next) => {
   })
 })
 
-/*** GET PRODUCTS VENDOR */
+/*************************
+ 4) GET PRODUCTS VENDOR */
 router.get('/productsVendor', (req, res, next) => {
   Product.find({ vendor_id: req.query.vendor_id})
   .then(product=> {
@@ -123,6 +110,7 @@ router.post('/send', (req, res, next) => {
     }
   })
 })
+
 
 
 module.exports = router;
