@@ -17,7 +17,7 @@ class Index extends Component {
         {/* show all vendors information */}
         {vendors.map(vendor => {
           return (
-            <div key={vendor.id}>
+            <div key={vendor.vendor_id}>
               <img src={vendor.logo} width="150px" />
               <h1>{vendor.name}</h1>
               <p>{vendor.description}</p>

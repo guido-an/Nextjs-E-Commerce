@@ -8,7 +8,7 @@ class Product extends Component {
   static async getInitialProps({ query }) {
     // get the single product API from backend index.js with route params
     const res = await fetch(
-      `http://localhost:5000/product/${query.vendor_id}/${query.product_id}`
+      `http://localhost:5000/product/${query.product_id}`
     );
     const data = await res.json();
     console.log(query);
@@ -23,18 +23,20 @@ class Product extends Component {
     desc: "",
     price: "",
     weight: "",
-    vendor_name: ""
+    vendor_name: "",
+    vendor: ""
   };
 
   componentDidMount() {
-    const { img, name, desc, price, weight, vendor_name } = this.props.product; // receive the product from getInitialProps 
+    const { img, name, desc, price, weight, vendor_name, product_id } = this.props.product; // receive the product from getInitialProps 
     this.setState({
       img: img,
       name: name,
       desc: desc,
       price: price,
       weight: weight,
-      vendor_name: vendor_name
+      vendor_name: vendor_name,
+      product_id: product_id
     });
   }
 

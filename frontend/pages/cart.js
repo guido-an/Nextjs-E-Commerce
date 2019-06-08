@@ -11,33 +11,34 @@ class Cart extends Component {
   // on page load calculate totalPriceCart 
   componentDidMount() {
     this.calculateTotalPrice(this.props.productsInCart);
-    this.filterVendorBjt("Bjt")
-    this.filterVendorRinci("Rinci")
+    this.filterVendorBjt()
+    this.filterVendorRinci()
   }
 
   // if a product is removed update totalPriceCart  
   componentDidUpdate(prevProps) {
     if (this.props !== prevProps) {
       this.calculateTotalPrice(this.props.productsInCart);
-      this.filterVendorBjt("Bjt")
-      this.filterVendorRinci("Rinci")
+      this.filterVendorBjt()
+      this.filterVendorRinci()
     } 
+    console.log(this.state)
   }
 
-  // collect Bjt product 
-  filterVendorBjt(vendorName) { 
+  // collect Bjt products 
+  filterVendorBjt() { 
     let vendorProducts = this.props.productsInCart.filter(product => {
-      return product.vendor_name == vendorName
+      return product.vendor_name == "Bjt"
     }) 
     this.setState({
       vendorBjt: vendorProducts
     })
   }
 
-  // collect Rinci product 
-  filterVendorRinci(vendorName) { 
+  // collect Rinci products
+  filterVendorRinci() { 
     let vendorProducts = this.props.productsInCart.filter(product => {
-      return product.vendor_name == vendorName
+      return product.vendor_name == "Rinci"
     }) 
     this.setState({
       vendorRinci: vendorProducts
@@ -60,7 +61,6 @@ class Cart extends Component {
 
 
 render() {
-  {console.log(this.state.vendorBjt)}
   return (
     <Layout>
       {/* Bjt vendor */}

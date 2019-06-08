@@ -22,7 +22,7 @@ class MyApp extends App {
   }
 
   updateCart = (product) => {
-    console.log(product)
+   
     let p = {...product}
     p.id = Math.random()
     let productsInCart = [...this.state.productsInCart, p]

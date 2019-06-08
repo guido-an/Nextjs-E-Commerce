@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1864,8 +1864,8 @@ function (_Component) {
     // on page load calculate totalPriceCart 
     value: function componentDidMount() {
       this.calculateTotalPrice(this.props.productsInCart);
-      this.filterVendorBjt("Bjt");
-      this.filterVendorRinci("Rinci");
+      this.filterVendorBjt();
+      this.filterVendorRinci();
     } // if a product is removed update totalPriceCart  
 
   }, {
@@ -1873,27 +1873,29 @@ function (_Component) {
     value: function componentDidUpdate(prevProps) {
       if (this.props !== prevProps) {
         this.calculateTotalPrice(this.props.productsInCart);
-        this.filterVendorBjt("Bjt");
-        this.filterVendorRinci("Rinci");
+        this.filterVendorBjt();
+        this.filterVendorRinci();
       }
-    } // collect Bjt product 
+
+      console.log(this.state);
+    } // collect Bjt products 
 
   }, {
     key: "filterVendorBjt",
-    value: function filterVendorBjt(vendorName) {
+    value: function filterVendorBjt() {
       var vendorProducts = this.props.productsInCart.filter(function (product) {
-        return product.vendor_name == vendorName;
+        return product.vendor_name == "Bjt";
       });
       this.setState({
         vendorBjt: vendorProducts
       });
-    } // collect Rinci product 
+    } // collect Rinci products
 
   }, {
     key: "filterVendorRinci",
-    value: function filterVendorRinci(vendorName) {
+    value: function filterVendorRinci() {
       var vendorProducts = this.props.productsInCart.filter(function (product) {
-        return product.vendor_name == vendorName;
+        return product.vendor_name == "Rinci";
       });
       this.setState({
         vendorRinci: vendorProducts
@@ -1905,9 +1907,6 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      {
-        console.log(this.state.vendorBjt);
-      }
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
@@ -1990,7 +1989,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 7:
 /*!*****************************!*\
   !*** multi ./pages/cart.js ***!
   \*****************************/

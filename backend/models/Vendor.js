@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
 const vendorSchema = new Schema(
   {
     vendor_id: Number,
@@ -8,14 +9,8 @@ const vendorSchema = new Schema(
     logo: String,
     desc: String,
     shop_url: String,
-    products: Array,
     vendor_name: String
   },
-  {
-    timestamps: {
-      createdAt: "created_at"
-    }
-  }
 );
 
 const Vendor = mongoose.model("Vendor", vendorSchema);

@@ -1,39 +1,41 @@
 import Layout from "../components/Layout";
-import vendors from "../vendors.json";
 import Link from "next/link";
 import React, { Component } from "react";
 import fetch from "isomorphic-unfetch";
 
 class Shop extends Component {
   static async getInitialProps({ query }) {
-    // get the single vendor API from backend index.js with query params
-    const res = await fetch(
+    // 1) get the single VENDOR
+    const resVendor = await fetch(
       `http://localhost:5000/vendor/?vendor_id=${query.vendor_id}`
-    ); 
-    const data = await res.json();
-    // return the result and the query object
-    return { vendor: data, query }; 
+    );
+    const dataVendor = await resVendor.json();
+
+    // 2) get PRODUCTS of single vendor
+    const resProducts = await fetch(
+      `http://localhost:5000/productsVendor?vendor_id=${query.vendor_id}`
+    );
+    const dataProducts = await resProducts.json();
+
+    return { vendor: dataVendor, productsVendor: dataProducts };
   }
 
   render() {
     const { vendor } = this.props; // decustructing the object
+    const { productsVendor } = this.props; // decustructing the object
+    console.log(productsVendor);
 
     return (
       <Layout>
         <h1>{vendor.name}</h1>
         <p>{vendor.desc}</p>
-
         <h2>All the products:</h2>
-        {vendor.products.map(product => {
+        {productsVendor.map(product => {
           return (
-            <div>
+            <div key={product.product_id}>
               <img src={product.img} width="140px" />
-              <p>{product.price}</p>
-              <Link
-                href={`/product/?vendor_id=${
-                  this.props.query.vendor_id
-                }&product_id=${product.product_id}`}
-              >
+              <p>{product.name}</p>
+              <Link href={`/product/?product_id=${product.product_id}`}>
                 <a>link</a>
               </Link>
             </div>

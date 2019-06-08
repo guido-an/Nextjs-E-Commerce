@@ -11137,7 +11137,8 @@ function (_Component) {
       desc: "",
       price: "",
       weight: "",
-      vendor_name: ""
+      vendor_name: "",
+      vendor: ""
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "increaseQuantiy", function () {
@@ -11171,7 +11172,8 @@ function (_Component) {
           desc = _this$props$product.desc,
           price = _this$props$product.price,
           weight = _this$props$product.weight,
-          vendor_name = _this$props$product.vendor_name; // receive the product from getInitialProps 
+          vendor_name = _this$props$product.vendor_name,
+          product_id = _this$props$product.product_id; // receive the product from getInitialProps 
 
       this.setState({
         img: img,
@@ -11179,7 +11181,8 @@ function (_Component) {
         desc: desc,
         price: price,
         weight: weight,
-        vendor_name: vendor_name
+        vendor_name: vendor_name,
+        product_id: product_id
       });
     }
   }, {
@@ -11191,7 +11194,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("img", {
@@ -11199,51 +11202,51 @@ function (_Component) {
         width: "120px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 71
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 72
         },
         __self: this
       }, product.name), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 73
         },
         __self: this
       }, product.desc), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 74
         },
         __self: this
       }, product.weight), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 75
         },
         __self: this
       }, "Quantity: ", this.state.quantity), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("button", {
         onClick: this.increaseQuantiy,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 76
         },
         __self: this
       }, "increase quantity"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("button", {
         onClick: this.decreaseQuantity,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 77
         },
         __self: this
       }, "decrease quantity"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 80
         },
         __self: this
       }, _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(product.price) * this.state.quantity, " \u20AC"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("button", {
@@ -11252,20 +11255,20 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 82
         },
         __self: this
       }, "UPDATE CART"), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
         href: "/cart",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 85
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 86
         },
         __self: this
       }, "view cart")));
@@ -11283,7 +11286,7 @@ function (_Component) {
               case 0:
                 query = _ref.query;
                 _context.next = 3;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14___default()("http://localhost:5000/product/".concat(query.vendor_id, "/").concat(query.product_id));
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14___default()("http://localhost:5000/product/".concat(query.product_id));
 
               case 3:
                 res = _context.sent;
@@ -11332,7 +11335,7 @@ module.exports = {"data":[{"vendor_id":0,"name":"Bjt","logo":"https://scontent.c
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fproduct&absolutePagePath=%2FUsers%2FGuido%2FDesktop%2Ffinal-project%202%2Ffrontend%2Fpages%2Fproduct.js ***!
   \******************************************************************************************************************************************************/
@@ -11355,5 +11358,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=product.js.map
