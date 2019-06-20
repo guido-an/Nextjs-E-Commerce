@@ -64,6 +64,12 @@ router.get('/productsVendor', (req, res, next) => {
   })
 })
 
+/*************************
+ 5) CREATE ORDER */
+ router.post('/create-order', (req, res, next) => {
+   res.send("order sent")
+ })
+
 
 /************* SEND EMAIL  ************/
 var nodemailer = require('nodemailer');

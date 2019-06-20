@@ -7,6 +7,7 @@ class Cart extends Component {
     totalPriceCart: 0,
     vendorBjt: [ ],
     vendorRinci: [ ],
+    minPriceShipping: 50
   };
 
   // on page load calculate totalPriceCart 
@@ -85,8 +86,7 @@ render() {
       )}
       <h2>Total price cart: {this.state.totalPriceCart}€</h2>
 
-    <a href="/checkout">checkout</a> 
-      
+      <Link href="/checkout"><a>checkout </a></Link>
     </Layout>
   );
 }

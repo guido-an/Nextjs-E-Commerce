@@ -1,42 +1,40 @@
-import React, { Component } from "react";
-import { Elements, StripeProvider } from "react-stripe-elements";
-import CheckoutForm from "../components/CheckoutForm";
-import Head from "next/head";
+import React, { Component } from 'react'
+import Link from 'next/link'
+import Layout from "../components/Layout";
 
-class Checkout extends Component {
-  constructor() {
-    super();
-    this.state = { stripe: null };
+
+export default class checkout extends Component {
+  state = {
+    name: "",
+    lastName: "",
+    address: "",
+    phone: "",
+    email: ""
   }
 
-  componentDidMount() {
-    if (window.Stripe) {
-      this.setState({ stripe: window.Stripe("pk_test_6kBZOyTRFwWGyCm4gqzAXxbY00DdIRAzhY") });
-      console.log("stripe is ready");
-    } else {
-      document.querySelector("#stripe-js").addEventListener("load", () => {
-        // Create Stripe instance once Stripe.js loads
-        this.setState({ stripe: window.Stripe("pk_test_6kBZOyTRFwWGyCm4gqzAXxbY00DdIRAzhY") });
-      });
-    }
-  }
+ handleChange = (e) => {
+   this.setState({
+    [e.target.name]: e.target.value
+   })
+   console.log(this.state)
+ }
+
 
   render() {
-    // this.state.stripe will either be null or a Stripe instance
-    // depending on whether Stripe.js has loaded.
     return (
-      <StripeProvider stripe={this.state.stripe}>
-        <div>
-          <Head>
-            <script id="stripe-js" src="https://js.stripe.com/v3/" async />
-          </Head>
-          <Elements>
-            <CheckoutForm />
-          </Elements>
-        </div>
-      </StripeProvider>
-    );
+      <Layout>
+   
+        <h1>Checkout</h1>
+   <input type="text" placeholder="name" name="name" onChange={this.handleChange} />
+   <input type="text" placeholder="lastName" name="lastName" onChange={this.handleChange} />
+   <input type="text" placeholder="address" name="address" onChange={this.handleChange} />
+   <input type="text" placeholder="phone" name="phone" onChange={this.handleChange} />
+   <input type="email" placeholder="email" name="email" onChange={this.handleChange} />
+        <button onClick={() => this.props.addCustomerDetails(this.state)}>
+                     send details
+          </button>
+          <Link href="/payment"><a>payment </a></Link>
+      </Layout>
+    )
   }
 }
-
-export default Checkout;

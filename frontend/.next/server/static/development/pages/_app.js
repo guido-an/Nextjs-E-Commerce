@@ -108,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/Guido/Desktop/final-project-stripe-test/frontend/components/Header.js";
+var _jsxFileName = "/Users/Guido/Desktop/final-project/frontend/components/Header.js";
 
 
 
@@ -152,7 +152,7 @@ var Header = function Header(props) {
   }, "back to shop")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "679991876",
     __self: this
-  }, ".jsx-679991876{background-color:#f7f7f7;padding:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3Qtc3RyaXBlLXRlc3QvZnJvbnRlbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2dCLEFBRWdDLHlCQUNaLGFBQ2YiLCJmaWxlIjoiL1VzZXJzL0d1aWRvL0Rlc2t0b3AvZmluYWwtcHJvamVjdC1zdHJpcGUtdGVzdC9mcm9udGVuZC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuY29uc3QgSGVhZGVyID0gKHByb3BzKSA9PiAoXG4gIDxoZWFkZXI+XG4gIFxuICBcbiAgIDxMaW5rIGhyZWY9XCIvY2FydFwiPjxhPiBwcm9kdWN0cyBpbiBjYXJ0OiB7cHJvcHMucHJvZHVjdHNJbkNhcnQubGVuZ3RofTwvYT48L0xpbms+XG4gICA8TGluayBocmVmPVwiL1wiPjxhPmJhY2sgdG8gc2hvcDwvYT48L0xpbms+XG4gICBcbiAgICA8c3R5bGUganN4PntgXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjdmN2Y3O1xuICAgICAgcGFkZGluZzogNDBweDtcbiAgICBgfTwvc3R5bGU+XG4gIDwvaGVhZGVyPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyO1xuIl19 */\n/*@ sourceURL=/Users/Guido/Desktop/final-project-stripe-test/frontend/components/Header.js */"));
+  }, ".jsx-679991876{background-color:#f7f7f7;padding:40px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9HdWlkby9EZXNrdG9wL2ZpbmFsLXByb2plY3QvZnJvbnRlbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2dCLEFBRWdDLHlCQUNaLGFBQ2YiLCJmaWxlIjoiL1VzZXJzL0d1aWRvL0Rlc2t0b3AvZmluYWwtcHJvamVjdC9mcm9udGVuZC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xuY29uc3QgSGVhZGVyID0gKHByb3BzKSA9PiAoXG4gIDxoZWFkZXI+XG4gIFxuICBcbiAgIDxMaW5rIGhyZWY9XCIvY2FydFwiPjxhPiBwcm9kdWN0cyBpbiBjYXJ0OiB7cHJvcHMucHJvZHVjdHNJbkNhcnQubGVuZ3RofTwvYT48L0xpbms+XG4gICA8TGluayBocmVmPVwiL1wiPjxhPmJhY2sgdG8gc2hvcDwvYT48L0xpbms+XG4gICBcbiAgICA8c3R5bGUganN4PntgXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjdmN2Y3O1xuICAgICAgcGFkZGluZzogNDBweDtcbiAgICBgfTwvc3R5bGU+XG4gIDwvaGVhZGVyPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyO1xuIl19 */\n/*@ sourceURL=/Users/Guido/Desktop/final-project/frontend/components/Header.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -2285,7 +2285,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/Guido/Desktop/final-project-stripe-test/frontend/pages/_app.js";
+var _jsxFileName = "/Users/Guido/Desktop/final-project/frontend/pages/_app.js";
 
 
 
@@ -2309,10 +2309,25 @@ function (_App) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_8__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_9__["default"])(MyApp)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_10__["default"])(_this), "state", {
-      productsInCart: []
+      productsInCart: [],
+      customerDetails: {
+        name: "",
+        lastName: "",
+        address: "",
+        phone: "",
+        email: ""
+      }
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_10__["default"])(_this), "updateCart", function (product) {
+      for (var i = 0; i < _this.state.productsInCart.length; i++) {
+        if (_this.state.productsInCart[i].name == product.name) {
+          alert("Product already in cart");
+
+          _this.state.productsInCart.pop(product);
+        }
+      }
+
       var p = Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_5__["default"])({}, product);
 
       p.id = Math.random();
@@ -2323,6 +2338,7 @@ function (_App) {
       });
 
       console.log(p.id);
+      console.log("app state", _this.state.productsInCart);
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_10__["default"])(_this), "deleteProduct", function (id) {
@@ -2333,6 +2349,14 @@ function (_App) {
       _this.setState({
         productsInCart: productsInCart
       });
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_10__["default"])(_this), "addCustomerDetails", function (details) {
+      _this.setState({
+        customerDetails: details
+      });
+
+      console.log("app", details);
     });
 
     return _this;
@@ -2347,34 +2371,36 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_14__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 81
         },
         __self: this
       }, "app_js"), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 82
         },
         __self: this
       }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_3___default()(this.state, "\t", 2)), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_15__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, this.state, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 83
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+        totalPrice: this.totalPrice,
+        addCustomerDetails: this.addCustomerDetails,
         updateCart: this.updateCart,
         deleteProduct: this.deleteProduct
       }, pageProps, this.state, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 84
         },
         __self: this
       })));

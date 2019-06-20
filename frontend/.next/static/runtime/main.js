@@ -6671,7 +6671,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/Users/Guido/Desktop/final-project-stripe-test/frontend/.next");
+      source_map_support_1.rewriteStacktrace(error, "/Users/Guido/Desktop/final-project/frontend/.next");
       return error;
     }
   };

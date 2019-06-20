@@ -3,6 +3,8 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import React, { Component } from "react";
 
+
+
 class Index extends Component {
   static async getInitialProps() {
     const res = await fetch("http://localhost:5000/vendors"); // get the vendors API from backend routes/index.js

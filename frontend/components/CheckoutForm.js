@@ -3,10 +3,13 @@ import { CardElement, injectStripe } from "react-stripe-elements";
 
 class CheckoutForm extends Component {
   state = {
-    complete: false
+    complete: false,
+    productsInCart: this.props.productsInCart,
+    customerDetails: this.props.customerDetails
   };
 
   submit = async () => {
+    console.log("checkout form", this.state)
     try {
       let { token, error } = await this.props.stripe.createToken({
         name: "Name",
@@ -14,7 +17,8 @@ class CheckoutForm extends Component {
      
       if (error) console.log(error);
       const data = {
-        tokenId: token.id
+        tokenId: token.id,
+        productsInCart: this.state.productsInCart
         // products: [{id: , qty: 1}, ]
         // amount: 1000
       }
@@ -26,6 +30,10 @@ class CheckoutForm extends Component {
       
       if (response.ok) {
         console.log("payment completed");
+        console.log(this.state)
+        this.setState({
+          paymentCompleted: "Payment completed succesfully :)"
+        })
         this.setState({ complete: true });
       }
     } catch (e) {
@@ -34,11 +42,13 @@ class CheckoutForm extends Component {
   };
 
   render() {
+    
     return (
       <div className="checkout">
         <p>Would you like to complete the purchase?</p>
         <CardElement />
         <button onClick={this.submit}>Send</button>
+        <p>{this.state.paymentCompleted}</p>
       </div>
     );
   }
