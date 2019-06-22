@@ -83,6 +83,18 @@ router.get('/productsVendor', (req, res, next) => {
    })
  })
 
+ /*************************
+ 6) GET ORDERS */
+ router.get('/orders', (req, res) => {
+   Order.find()
+   .then((orders) => {
+     res.send(orders)
+   })
+   .catch(err => {
+     console.log(err)
+   })
+ })
+
 
 /************* SEND EMAIL  ************/
 var nodemailer = require('nodemailer');

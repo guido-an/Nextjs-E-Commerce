@@ -19,6 +19,10 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/login": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/private": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"

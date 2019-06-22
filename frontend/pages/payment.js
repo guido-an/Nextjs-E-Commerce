@@ -28,27 +28,6 @@ class Checkout extends Component {
     }
   }
 
-  // createOrder = () => {
-  //   // axios.post({
-  //   //   method: "POST",
-  //   //   url: "http://localhost:5000/create-order",
-  //   //   data: {
-  //   //     productsInCart: this.state.productsInCart,
-  //   //     customerDetails: this.state.customerDetails
-  //   //   }
-  //   // })
-  //   axios.post("http://localhost:5000/create-order", {
-  //          productsInCart: this.state.productsInCart,
-  //          customerDetails: this.state.customerDetails
-  //       }).then((order) => {
-  //     console.log(order)
-  //   })
-  //   .catch(err => {
-  //     console.log(err)
-  //   })
-    
-  // }
-
  
   render() {
     // this.state.stripe will either be null or a Stripe instance
