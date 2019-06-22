@@ -13,7 +13,7 @@ router.get("/login", (req, res, next) => {
 });
 
 router.post("/login", passport.authenticate("local", {
-  successRedirect: "/",
+  successRedirect: "http://localhost:3000",
   failureRedirect: "/auth/login",
   failureFlash: true,
   passReqToCallback: true

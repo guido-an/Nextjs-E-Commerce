@@ -2,6 +2,7 @@ const express = require('express');
 const router  = express.Router();
 const Vendor = require("../models/Vendor");
 const Product = require("../models/Product");
+const Order = require("../models/Order");
 // const stripe = require("stripe")("sk_test_SGABL1KLFsniwKNBLv1rsWHr00A6YIf7uf");
 
 
@@ -66,8 +67,20 @@ router.get('/productsVendor', (req, res, next) => {
 
 /*************************
  5) CREATE ORDER */
- router.post('/create-order', (req, res, next) => {
-   res.send("order sent")
+ router.post('/create-order', ( req, res ) => {
+   const { productsInCart, customerDetails } = req.body
+   Order.create({
+    productsInCart: productsInCart,
+    customerDetails: customerDetails
+   })
+
+   .then((order) => {
+     res.send(order)
+     console.log("order!", order)
+   })
+   .catch(err => {
+     console.log("err:", err)
+   })
  })
 
 

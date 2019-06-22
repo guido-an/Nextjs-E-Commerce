@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -118,6 +118,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var react_stripe_elements__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-stripe-elements */ "react-stripe-elements");
 /* harmony import */ var react_stripe_elements__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_stripe_elements__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -129,6 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/Guido/Desktop/final-project/frontend/components/CheckoutForm.js";
+
 
 
 
@@ -153,7 +156,8 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "state", {
       complete: false,
       productsInCart: _this.props.productsInCart,
-      customerDetails: _this.props.customerDetails
+      customerDetails: _this.props.customerDetails,
+      paymentCompleted: ""
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "submit",
@@ -199,7 +203,6 @@ function (_Component) {
 
               if (response.ok) {
                 console.log("payment completed");
-                console.log(_this.state);
 
                 _this.setState({
                   paymentCompleted: "Payment completed succesfully :)"
@@ -208,6 +211,8 @@ function (_Component) {
                 _this.setState({
                   complete: true
                 });
+
+                _this.createOrder();
               }
 
               _context.next = 18;
@@ -226,6 +231,17 @@ function (_Component) {
       }, _callee, null, [[1, 15]]);
     })));
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "createOrder", function () {
+      axios__WEBPACK_IMPORTED_MODULE_12___default.a.post("http://localhost:5000/create-order", {
+        productsInCart: _this.props.productsInCart,
+        customerDetails: _this.props.customerDetails
+      }).then(function (order) {
+        console.log(order);
+      }).catch(function (err) {
+        console.log(err);
+      });
+    });
+
     return _this;
   }
 
@@ -236,32 +252,32 @@ function (_Component) {
         className: "checkout",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 64
         },
         __self: this
       }, "Would you like to complete the purchase?"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_stripe_elements__WEBPACK_IMPORTED_MODULE_11__["CardElement"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 65
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("button", {
         onClick: this.submit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 66
         },
         __self: this
-      }, "Send"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
+      }, "complete payment"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 67
         },
         __self: this
       }, this.state.paymentCompleted));
@@ -2109,7 +2125,8 @@ function (_Component) {
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
       stripe: null,
-      productsInCart: _this.props.productsInCart
+      productsInCart: _this.props.productsInCart,
+      customerDetails: _this.props.customerDetails
     });
 
     return _this;
@@ -2119,6 +2136,8 @@ function (_Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
+
+      console.log("did mount", this.state);
 
       if (window.Stripe) {
         this.setState({
@@ -2133,7 +2152,26 @@ function (_Component) {
           });
         });
       }
-    }
+    } // createOrder = () => {
+    //   // axios.post({
+    //   //   method: "POST",
+    //   //   url: "http://localhost:5000/create-order",
+    //   //   data: {
+    //   //     productsInCart: this.state.productsInCart,
+    //   //     customerDetails: this.state.customerDetails
+    //   //   }
+    //   // })
+    //   axios.post("http://localhost:5000/create-order", {
+    //          productsInCart: this.state.productsInCart,
+    //          customerDetails: this.state.customerDetails
+    //       }).then((order) => {
+    //     console.log(order)
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //   })
+    // }
+
   }, {
     key: "render",
     value: function render() {
@@ -2143,38 +2181,39 @@ function (_Component) {
         stripe: this.state.stripe,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_stripe_elements__WEBPACK_IMPORTED_MODULE_8__["Elements"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 61
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_CheckoutForm__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        customerDetails: this.state.customerDetails,
         productsInCart: this.state.productsInCart,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 63
         },
         __self: this
       }))))));
@@ -2188,7 +2227,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 9:
 /*!********************************!*\
   !*** multi ./pages/payment.js ***!
   \********************************/
@@ -2197,6 +2236,17 @@ function (_Component) {
 
 module.exports = __webpack_require__(/*! /Users/Guido/Desktop/final-project/frontend/pages/payment.js */"./pages/payment.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 

@@ -2336,9 +2336,6 @@ function (_App) {
       _this.setState({
         productsInCart: productsInCart
       });
-
-      console.log(p.id);
-      console.log("app state", _this.state.productsInCart);
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_12__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_10__["default"])(_this), "deleteProduct", function (id) {
@@ -2371,25 +2368,25 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_14__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 73
         },
         __self: this
       }, "app_js"), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 74
         },
         __self: this
       }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_3___default()(this.state, "\t", 2)), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_15__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, this.state, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 75
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
@@ -2400,7 +2397,7 @@ function (_App) {
       }, pageProps, this.state, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 76
         },
         __self: this
       })));

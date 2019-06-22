@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { CardElement, injectStripe } from "react-stripe-elements";
+import axios from "axios"
 
 class CheckoutForm extends Component {
   state = {
     complete: false,
     productsInCart: this.props.productsInCart,
-    customerDetails: this.props.customerDetails
+    customerDetails: this.props.customerDetails,
+    paymentCompleted: ""
   };
 
   submit = async () => {
@@ -30,16 +32,30 @@ class CheckoutForm extends Component {
       
       if (response.ok) {
         console.log("payment completed");
-        console.log(this.state)
+     
         this.setState({
           paymentCompleted: "Payment completed succesfully :)"
         })
         this.setState({ complete: true });
+        this.createOrder()
       }
     } catch (e) {
       console.log("this is the error:", e);
     }
   };
+
+  createOrder = () => {
+    axios.post("http://localhost:5000/create-order", {
+           productsInCart: this.props.productsInCart,
+           customerDetails: this.props.customerDetails
+        }).then((order) => {
+      console.log(order)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+    
+  }
 
   render() {
     
@@ -47,7 +63,7 @@ class CheckoutForm extends Component {
       <div className="checkout">
         <p>Would you like to complete the purchase?</p>
         <CardElement />
-        <button onClick={this.submit}>Send</button>
+        <button onClick={this.submit}>complete payment</button>
         <p>{this.state.paymentCompleted}</p>
       </div>
     );

@@ -5,17 +5,18 @@ import Head from "next/head";
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
+
 class Checkout extends Component {
   state = {
     stripe: null,
     productsInCart: this.props.productsInCart,
-  
+    customerDetails: this.props.customerDetails,
+    
   }
 
 
-
   componentDidMount() {
-  
+  console.log("did mount", this.state)
     if (window.Stripe) {
       this.setState({ stripe: window.Stripe("pk_test_6kBZOyTRFwWGyCm4gqzAXxbY00DdIRAzhY") });
       console.log("stripe is ready");
@@ -26,6 +27,27 @@ class Checkout extends Component {
       });
     }
   }
+
+  // createOrder = () => {
+  //   // axios.post({
+  //   //   method: "POST",
+  //   //   url: "http://localhost:5000/create-order",
+  //   //   data: {
+  //   //     productsInCart: this.state.productsInCart,
+  //   //     customerDetails: this.state.customerDetails
+  //   //   }
+  //   // })
+  //   axios.post("http://localhost:5000/create-order", {
+  //          productsInCart: this.state.productsInCart,
+  //          customerDetails: this.state.customerDetails
+  //       }).then((order) => {
+  //     console.log(order)
+  //   })
+  //   .catch(err => {
+  //     console.log(err)
+  //   })
+    
+  // }
 
  
   render() {
@@ -38,8 +60,8 @@ class Checkout extends Component {
           <Elements>
             <div>
               
-            <CheckoutForm productsInCart={this.state.productsInCart} />
-         
+            <CheckoutForm customerDetails={this.state.customerDetails} productsInCart={this.state.productsInCart} />
+   
             </div>
           </Elements>
         </div>

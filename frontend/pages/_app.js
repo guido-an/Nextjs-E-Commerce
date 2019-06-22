@@ -44,15 +44,7 @@ class MyApp extends App {
     this.setState({
       productsInCart: productsInCart
     })
-
-    console.log(p.id)
-    console.log("app state", this.state.productsInCart)
-  
-
   }
-
-
-
 
   deleteProduct = (id) => { 
      let productsInCart = this.state.productsInCart.filter(product => {
