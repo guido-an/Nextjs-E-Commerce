@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AuthService from './auth/AuthService';
+import Router from 'next/router'
 
 export default class Login extends Component {
 
@@ -26,8 +27,9 @@ export default class Login extends Component {
         this.service.login(username, password)
           .then(response => {
               console.log(response);
-              this.props.setUser(response)
-          })
+              localStorage.setItem('loggedIn', true);
+              Router.push('/private')
+        })
     }
   render() {
     return (
@@ -50,4 +52,3 @@ export default class Login extends Component {
     );
   }
 }
-

@@ -64,7 +64,6 @@ class MyApp extends App {
     console.log("app", details)
   }
 
-  
   render() {
     const { Component, pageProps } = this.props
 

@@ -12,6 +12,7 @@ const MongoStore = require('connect-mongo')(session);
 const flash      = require("connect-flash");
 const cors = require('cors')
 const hbs          = require('hbs'); // test
+const passport = require('passport')
     
 
 mongoose
@@ -55,6 +56,9 @@ app.use(session({
 }))
 app.use(flash());
 require('./passport')(app);
+
+app.use(passport.initialize()); // ??
+app.use(passport.session());    // ??
     
 
 const index = require('./routes/index');
@@ -65,5 +69,7 @@ app.use('/auth', authRoutes);
 
 const payment = require('./routes/payment');
 app.use('/', payment);
+
+
       
 module.exports = app;
