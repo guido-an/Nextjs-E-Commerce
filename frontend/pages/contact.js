@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Layout from "../components/Layout";
 
 // class Contact extends Component {
 
@@ -92,8 +93,8 @@ class Contact extends Component {
   
     render() {
       return (
-        <div>
-            <h2>get in touch</h2>
+        <Layout>
+            <h1>get in touch</h1>
           <form>
             <div>
               <input type="text" id="name" />
@@ -108,7 +109,7 @@ class Contact extends Component {
             <button onClick={this.handleSubmit}>Send</button>
             <p>{this.state.messageSent}</p>
           </form>
-        </div>
+        </Layout>
       );
     }
   }

@@ -69,8 +69,6 @@ class MyApp extends App {
 
     return (
       <Container>
-      <p>app_js</p>
-       <pre>{JSON.stringify(this.state, "\t", 2)}</pre> 
        <Header {...this.state} />
         <Component totalPrice={this.totalPrice} addCustomerDetails={this.addCustomerDetails} updateCart={this.updateCart} deleteProduct={this.deleteProduct} {...pageProps} {...this.state} />
       </Container>

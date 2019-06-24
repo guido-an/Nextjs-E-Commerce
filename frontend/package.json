@@ -12,9 +12,11 @@
   "dependencies": {
     "auth-service": "^1.0.0",
     "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.1.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
     "react-stripe-elements": "^3.0.0"
   }

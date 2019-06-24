@@ -15,15 +15,23 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/cart": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/contact": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/login": [
+    "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/private": [
+    "/shop": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
