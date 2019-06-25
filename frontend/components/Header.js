@@ -3,6 +3,7 @@ const Header = props => (
   <header className="container">
     <div className="logo">
       {/* <img src="../static/images/faces-and-places-logo.png" width="260px"/> */}
+     
       <h3>Logo</h3>
     </div>
     <div className="menu text-center">

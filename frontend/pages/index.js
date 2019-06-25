@@ -19,7 +19,7 @@ class Index extends Component {
         <section className="title-hero container text-center">
           {/* <h3>Lorem. Ipsum. Doloret.</h3> */}
           <h1>
-            Where local <span> vendors</span> meet
+             <span> Faces</span> And <span> Places</span> 
           </h1>
           {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -30,12 +30,12 @@ class Index extends Component {
           {vendors.map(vendor => {
             const backgroundImage = {
               // backgroundImage: `url('/static/images/${vendor.shop_url}.jpeg')`,
-              backgroundRepeat: "no-repeat",
+              backgroundRepeat: 'no-repeat',
               height: "400px",
               backgroundSize: "cover",
               background: `linear-gradient( to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2)), url('/static/images/${
                 vendor.shop_url
-              }.jpeg')`
+              }.jpg')`,
             };
 
             return (

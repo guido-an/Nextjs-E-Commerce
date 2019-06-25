@@ -19,15 +19,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/contact": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/product": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
