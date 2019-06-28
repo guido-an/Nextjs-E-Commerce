@@ -1,55 +1,27 @@
 import React, { Component } from "react";
 import Layout from "../components/Layout";
-import Link from 'next/link'
+import Link from "next/link";
 
 class Cart extends Component {
   state = {
-    totalPriceCart: 0,
-    vendorBjt: [ ],
-    vendorRinci: [ ],
-    minPriceShipping: 50
+    totalPriceCart: 0
   };
 
-  // on page load calculate totalPriceCart 
+  // on page load calculate totalPriceCart
   componentDidMount() {
     this.calculateTotalPrice(this.props.productsInCart);
-    this.filterVendorBjt()
-    this.filterVendorRinci()
+    console.log("cart page", this.props.productsInCart);
   }
 
-  // if a product is removed update totalPriceCart  
+  // if a product is removed update totalPriceCart
   componentDidUpdate(prevProps) {
     if (this.props !== prevProps) {
       this.calculateTotalPrice(this.props.productsInCart);
-      this.filterVendorBjt()
-      this.filterVendorRinci()
-    } 
-    console.log(this.state)
+    }
   }
 
-  // collect Bjt products 
-  filterVendorBjt() { 
-    let vendorProducts = this.props.productsInCart.filter(product => {
-      return product.vendor_name == "Bjt"
-    }) 
-    this.setState({
-      vendorBjt: vendorProducts
-    })
-  }
-
-  // collect Rinci products
-  filterVendorRinci() { 
-    let vendorProducts = this.props.productsInCart.filter(product => {
-      return product.vendor_name == "Rinci"
-    }) 
-    this.setState({
-      vendorRinci: vendorProducts
-    })
-  }
-
-
-   // caluclate totalPriceCart function (array is a parameter for this.props.productsInCart)
-   calculateTotalPrice = array => {
+  // calculate totalPriceCart function (array is a parameter for this.props.productsInCart)
+  calculateTotalPrice = array => {
     let totalPricesArray = [];
     array.forEach(product => {
       let productPrice = parseInt(product.price) * product.quantity;
@@ -61,35 +33,109 @@ class Cart extends Component {
     });
   };
 
+  render() {
+    return (
+      <Layout>
+        {/* Products */}
+        <section className="container">
+          <div className="products-in-cart-wrapper">
+            <table>
+              <tr>
+                <th>Product</th>
+                <th className="field">Vendor</th>
+                <th className="field">Price</th>
+                <th className="field">Quantity</th>
+                <th className="field">Remove</th>
+              </tr>
+              {this.props.productsInCart.map((product, index) => {
+                return (
+                  <tr>
+                    <td>
+                      {" "}
+                      <p className="product-name">{product.name}</p>
+                      <img
+                        src={`../static/images/${product.product_url}.jpg`}
+                        width="180px"
+                      />{" "}
+                    </td>
 
-render() {
-  return (
-    <Layout>
-      {/* Bjt vendor */}
-    <h2>Bjt products</h2>
-      {this.state.vendorBjt.length > 0 ? (
-         
-      this.state.vendorBjt.map(product => {
-        return <div>
+                    <td>{product.vendor_name}</td>
+                    <td>{product.price}€</td>
+                    <td>{product.quantity}</td>
+                    <td>
+                      {" "}
+                      <button
+                        className="btn btn-danger"
+                        onClick={() => this.props.deleteProduct(product.id)}
+                      >
+                        x
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+            <p className="total-price">
+              Total price: {this.state.totalPriceCart}€
+            </p>
+            <Link href="/checkout">
+              <a className="checkout">Proceed to Checkout </a>
+            </Link>
+          </div>
+        </section>
 
-          <p><strong>Name: </strong> {product.name}</p>
-          <p><strong>Quantity: </strong> {product.quantity}</p>
-          <p><strong>Total: </strong> {product.quantity * parseInt(product.price)}€</p>
-          <button onClick={() => this.props.deleteProduct(product.id)}>
-                     remove product
-          </button>
-        </div>
-      })
+        <style jsx>
+          {`
+            table {
+              width: 100%;
+              margin-top: 80px
           
-      ) : (
-       null
-      )}
-      <h2>Total price cart: {this.state.totalPriceCart}€</h2>
+            }
+            table td{
+              padding-bottom: 20px;
+              border-bottom: 2px solid #fafafa
+            }
+            .product-name{
+              position: relative;
+              top: 10px
+            }
+            .total-price{
+              color: #222 !important;
+              font-size: 22px;
+              font-weight: 700;
+              text-align: right
+            }
+            button {
+              width: 40px;
+              position: relative;
+              left: 10px
+              
+            }
+            .checkout{
+              text-align: right;
+              display: block;
+              margin-bottom: 120px
 
-      <Link href="/checkout"><a>checkout </a></Link>
-    </Layout>
-  );
-}
+            }
+            .checkout:hover{
+               text-decoration: none
+            }
+          
+            @media only screen and (min-width: 1200px) {
+              table {
+              width: 100%;
+              margin: 80px auto;
+              }
+              .field{
+                width: 200px
+              }
+              
+           
+          `}
+        </style>
+      </Layout>
+    );
+  }
 }
 
 export default Cart;

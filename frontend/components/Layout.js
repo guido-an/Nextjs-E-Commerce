@@ -1,6 +1,5 @@
 import Header from './Header'
 import Footer from './Footer'
-import React, { Component } from "react";
 import Head from "next/head";
 
 
@@ -8,8 +7,9 @@ const Layout = props => (
     <div>
     <Head>
             <script id="stripe-js" src="https://js.stripe.com/v3/" async />
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet" />    
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-          </Head>
+    </Head>
         {props.children}
         <Footer />
         
@@ -28,6 +28,9 @@ const Layout = props => (
           margin-bottom: 10px;
           color: #899095 !important
         }
+        button:focus{
+            outline: none;
+          }
       `}</style>
      
      

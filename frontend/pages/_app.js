@@ -26,14 +26,32 @@ class MyApp extends App {
       address: "",
       phone: "",
       email: ""
-    }
+    },
+    viewCart: false,
+    totalPriceCart: 0,
+    proceedToPayment: false,
+    confirmDetails: true
   }
+
+
+  calculateTotalPrice = array => {
+    let totalPricesArray = [];
+    array.forEach(product => {
+      let productPrice = parseInt(product.price) * product.quantity;
+      totalPricesArray.push(productPrice);
+    });
+    let totalPriceCart = totalPricesArray.reduce((a, b) => a + b, 0);
+    this.setState({
+      totalPriceCart: totalPriceCart
+    });
+  };
 
   updateCart = (product) => {
    
     for (var i = 0; i < this.state.productsInCart.length; i++) {
       if (this.state.productsInCart[i].name == product.name) {
         alert("Product already in cart")
+      
         this.state.productsInCart.pop(product)
       } 
     }
@@ -42,8 +60,14 @@ class MyApp extends App {
     p.id = Math.random()
     let productsInCart = [...this.state.productsInCart, p]
     this.setState({
-      productsInCart: productsInCart
+      productsInCart: productsInCart,
+      viewCart: true
     })
+    setTimeout(() => { 
+      this.setState({
+        viewCart: false
+      })
+    }, 5000);
   }
 
   deleteProduct = (id) => { 
@@ -52,16 +76,17 @@ class MyApp extends App {
      })
      this.setState({
       productsInCart: productsInCart,
-     
      })
   }
 
 
   addCustomerDetails = (details) => {
     this.setState({
-      customerDetails: details
+      customerDetails: details,
+      proceedToPayment: true,
+      confirmDetails: false
     })
-    console.log("app", details)
+
   }
 
   render() {
@@ -70,7 +95,7 @@ class MyApp extends App {
     return (
       <Container>
        <Header {...this.state} />
-        <Component totalPrice={this.totalPrice} addCustomerDetails={this.addCustomerDetails} updateCart={this.updateCart} deleteProduct={this.deleteProduct} {...pageProps} {...this.state} />
+        <Component calculateTotalPrice={this.calculateTotalPrice} addCustomerDetails={this.addCustomerDetails} updateCart={this.updateCart} deleteProduct={this.deleteProduct} {...pageProps} {...this.state} />
       </Container>
     )
   }

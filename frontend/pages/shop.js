@@ -29,10 +29,11 @@ class Shop extends Component {
       <Layout>
         <div className="shop-intro text-center">
           <img
-            src={`../static/images/${vendor.shop_url}-logo.png`}
+            src={`/static/images/${vendor.shop_url}-logo.png`}
             width="180px"
           />
-          <h1>About {vendor.name}</h1>
+          <h1>About <span>{vendor.name}</span></h1>
+          <div className="divider"></div>
           <span className="subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -40,16 +41,22 @@ class Shop extends Component {
             aliquip ex ea commodo consequat.{" "}
           </span>
         </div>
-        <h2 className="text-center">{vendor.name} Products</h2>
-        <section className="products-section container">
+ 
+        <section className="products-section container-fluid">
           {productsVendor.map(product => {
             return (
               <div className="product-container text-center">
-                <img
-                  src={`../static/images/${product.product_url}.jpg`}
-                  width="240px"
-                />
+                <Link as={`/${product.product_url}`}
+                  href={`/product/?product_id=${product.product_id}`}
+                ><a>
 
+                
+                <img
+                  src={`/static/images/${product.product_url}.jpg`}
+                  width="340px"
+                /></a>
+                </Link>
+              
                 {/* <img src="../static/images/pollen.jpg"/> */}
 
                 <p className="product-name">
@@ -57,10 +64,10 @@ class Shop extends Component {
                 </p>
                 <p>{product.price}€</p>
                 <Link
-                  as={`${product.product_url}`}
+                 as={`/${product.product_url}`}
                   href={`/product/?product_id=${product.product_id}`}
                 >
-                  <a className="product-link">Product</a>
+                  <a className="product-link">PRODUCT</a>
                 </Link>
               </div>
             );
@@ -74,34 +81,56 @@ class Shop extends Component {
             text-transform: uppercase;
             margin-top: 20px;
           }
+          h1 span{
+            color: #2d94e5
+          }
           h2 {
-            margin-top: 60px;
+            margin-top: 80px;
             margin-bottom: 20px;
+          }
+          .divider{
+            border-top: 2px solid #f7f7f7;
+            width: 120px;
+            margin: 0 auto;
+            
           }
           .subtitle {
             text-align: center;
-            width: 70%;
+            width: 80%;
             margin: 0 auto;
             display: block;
-            margin-top: 0px;
+            margin-top: 20px;
             margin-bottom: 80px;
+            color: #777
+          
+          }
+          .products-title{
+            text-transform: uppercase;
+            font-size: 26px;
+            font-weight: 600
           }
           .products-section {
-            display: flex;
-            justify-content: space-evenly;
-            box-shadow: 0px 0px 100px 0px rgba(12, 5, 5, 0.3);
             margin-top: 30px;
           }
           .product-container {
             margin-top: 40px;
             margin-bottom: 20px;
+           
           }
-          .product-container img{
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+          .product-container img {
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s
+           
+          }
+          .product-container img:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
           }
           .product-name {
             position: relative;
             top: 15px;
+            color: #222 !important;
+            font-size: 20px
           }
           .product-link {
             background-color: #2d94e5;
@@ -109,14 +138,31 @@ class Shop extends Component {
             border-radius: 4px;
             padding: 8px 20px;
             font-size: 14px;
-           
-           
+            width: 120px;
+            display: block;
+            margin: 0 auto;
+            transition: all 0.3s
           }
           .product-link:hover {
             text-decoration: none;
             background-color: green;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3)
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1)
+          }
 
+          @media only screen and (min-width: 768px) {
+            .products-section {
+              display: flex;
+              justify-content: space-evenly;
+              box-shadow: 13px 0px 36px 14px rgba(0, 0, 0, 0.2);
+              width: 95%;
+              margin-bottom: 80px;
+              padding-bottom: 60px;
+              border-radius: 4px
+            }
+            .subtitle{
+              width: 50%
+            }
           }
         `}</style>
       </Layout>

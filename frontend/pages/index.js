@@ -4,6 +4,11 @@ import Layout from "../components/Layout";
 import React, { Component } from "react";
 
 class Index extends Component {
+  // static async getInitialProps() {
+  //   const res = await fetch("http://localhost:5000/vendors"); // get the vendors API from backend routes/index.js
+  //   const data = await res.json(); // store the result
+  //   return { vendors: data }; // return the result
+  // }
   static async getInitialProps() {
     const res = await fetch("http://localhost:5000/vendors"); // get the vendors API from backend routes/index.js
     const data = await res.json(); // store the result
@@ -19,23 +24,25 @@ class Index extends Component {
         <section className="title-hero container text-center">
           {/* <h3>Lorem. Ipsum. Doloret.</h3> */}
           <h1>
-             <span> Faces</span> And <span> Places</span> 
+          Where Local <span> Vendors</span> Meet
+          <div className="divider"></div>
+            
           </h1>
-          {/* <p>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.{" "}
-          </p> */}
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </section>
         <div className="vendors-wrapper container-fluid">
           {vendors.map(vendor => {
             const backgroundImage = {
               // backgroundImage: `url('/static/images/${vendor.shop_url}.jpeg')`,
-              backgroundRepeat: 'no-repeat',
+              backgroundRepeat: "no-repeat",
               height: "400px",
               backgroundSize: "cover",
               background: `linear-gradient( to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2)), url('/static/images/${
                 vendor.shop_url
-              }.jpg')`,
+              }.jpg')`
             };
 
             return (
@@ -46,10 +53,10 @@ class Index extends Component {
               >
                 <div className="vendor-box-title">
                   <h2>{vendor.name}</h2>
-                 
+
                   {/* link to relative shop page information */}
                   <Link
-                    as={`${vendor.shop_url}`}
+                    as={`/${vendor.shop_url}`}
                     href={`/shop/?vendor_id=${vendor.vendor_id}`}
                   >
                     <a>> Vendor Shop</a>
@@ -64,9 +71,9 @@ class Index extends Component {
             h1 {
               text-transform: uppercase;
               padding: 5px;
-              border-bottom: 3px solid #fafafa;
-              
+
             }
+         
             h2 {
              
               font-weight: 700;
@@ -86,17 +93,30 @@ class Index extends Component {
             .vendors-wrapper {
               display: flex;
               flex-wrap: wrap;
-              justify-content: center;
+              justify-content: space-around;
               margin-top: 20px;
-              margin-bottom: 180px;
+              margin-bottom: 120px;
+              box-shadow: 13px -50px 36px 14px rgba(0, 0, 0, 0.1);
+              padding-top: 40px;
+              padding-bottom:80px;
+              width: 95%;
+              border-radius: 4px
             }
+            .divider{
+            border-top: 3px solid #f7f7f7;
+            width: 180px;
+            margin: 10px auto;
+            
+          }
             .vendor-box {
               margin: 8px;
               width: 100%;
               border-radius: 4px;
-              box-shadow: 0px 0px 10px 0px rgba(12, 5, 5, 0.6);
+              box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
               color: black;
+              
             }
+          
             .vendor-box-title {
               background-color: #fff;
               opacity: 0.8;
@@ -113,11 +133,13 @@ class Index extends Component {
               margin-top: 120px;
               padding: 40px;
             }
+       
+          
             .title-hero span {
               color: #2d94e5;
             }
             .title-hero p {
-              width: 70%;
+              width: 60%;
               margin: 0 auto;
              
             }

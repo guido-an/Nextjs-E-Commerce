@@ -67,7 +67,7 @@ router.post("/charge", async (req, res) => {
       description: "An example charge",
       source: req.body.tokenId
     });
-    console.log("payment completed");
+    
 
     res.json({ status });
   } catch (err) {
