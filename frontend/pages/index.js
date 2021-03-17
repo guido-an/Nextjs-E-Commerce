@@ -1,57 +1,52 @@
-import fetch from "isomorphic-unfetch";
-import Link from "next/link";
-import Layout from "../components/Layout";
-import React, { Component } from "react";
+import fetch from 'isomorphic-unfetch'
+import Link from 'next/link'
+import Layout from '../components/Layout'
+import React, { Component } from 'react'
 
 class Index extends Component {
-  // static async getInitialProps() {
-  //   const res = await fetch("http://localhost:5000/vendors"); // get the vendors API from backend routes/index.js
-  //   const data = await res.json(); // store the result
-  //   return { vendors: data }; // return the result
-  // }
-  static async getInitialProps() {
-    const res = await fetch("http://localhost:5000/vendors"); // get the vendors API from backend routes/index.js
-    const data = await res.json(); // store the result
-    return { vendors: data }; // return the result
+  static async getInitialProps () {
+    const res = await fetch('http://localhost:5000/vendors') // get the vendors API from backend routes/index.js
+    const data = await res.json() // store the result
+    return { vendors: data } // return the result
   }
 
-  render() {
-    const { vendors } = this.props; // decustructing the object
+  render () {
+    const { vendors } = this.props // decustructing the object
 
     return (
       <Layout>
         {/* show all vendors information */}
-        <section className="title-hero container text-center">
+        <section className='title-hero container text-center'>
           {/* <h3>Lorem. Ipsum. Doloret.</h3> */}
           <h1>
           Where Local <span> Vendors</span> Meet
-          <div className="divider"></div>
-            
+            <div className='divider' />
+
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </section>
-        <div className="vendors-wrapper container-fluid">
+        <div className='vendors-wrapper container-fluid'>
           {vendors.map(vendor => {
             const backgroundImage = {
               // backgroundImage: `url('/static/images/${vendor.shop_url}.jpeg')`,
-              backgroundRepeat: "no-repeat",
-              height: "400px",
-              backgroundSize: "cover",
+              backgroundRepeat: 'no-repeat',
+              height: '400px',
+              backgroundSize: 'cover',
               background: `linear-gradient( to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2)), url('/static/images/${
                 vendor.shop_url
               }.jpg')`
-            };
+            }
 
             return (
               <div
                 key={vendor.vendor_id}
-                className="vendor-box text-center"
+                className='vendor-box text-center'
                 style={backgroundImage}
               >
-                <div className="vendor-box-title">
+                <div className='vendor-box-title'>
                   <h2>{vendor.name}</h2>
 
                   {/* link to relative shop page information */}
@@ -63,7 +58,7 @@ class Index extends Component {
                   </Link>
                 </div>
               </div>
-            );
+            )
           })}
         </div>
         <style jsx>
@@ -163,8 +158,8 @@ class Index extends Component {
           `}
         </style>
       </Layout>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index

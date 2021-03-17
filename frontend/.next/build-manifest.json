@@ -15,31 +15,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/cart": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/checkout": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/payment": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/product": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/shop": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
