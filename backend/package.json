@@ -20,7 +20,7 @@
     "express": "^4.16.3",
     "express-session": "^1.16.2",
     "hbs": "^4.0.1",
-    "mongoose": "^5.2.10",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.0",
     "node-sass-middleware": "^0.11.0",
     "nodemailer": "^6.2.1",
